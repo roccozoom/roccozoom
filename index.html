@@ -3,410 +3,428 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RoccoZoom — Best Toys & Action Figures on Amazon</title>
-  <meta name="description" content="Discover the best toys, action figures, dinosaurs and playsets on Amazon. Curated daily picks for kids of all ages — with prices, ratings and fast shipping."/>
-  <meta property="og:title" content="RoccoZoom — Best Toys & Action Figures on Amazon"/>
-  <meta property="og:description" content="Best toys on Amazon, curated daily. Action figures, dinosaurs, playsets and more."/>
+  <title>RoccoZoom — Best Toys & Action Figures on Amazon 2026</title>
+  <meta name="description" content="Discover the best toys on Amazon — action figures, dinosaurs, playsets and more. Curated daily for kids of all ages with real ratings and fast shipping."/>
+  <meta property="og:title" content="RoccoZoom — Best Toys on Amazon 2026"/>
   <meta property="og:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1200"/>
-  <meta property="og:type" content="website"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
-  <!-- Google AdSense -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4267818870826080" crossorigin="anonymous"></script>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --navy:    #1A2E4A;
-      --orange:  #FF6B2B;
-      --orange-lt: #fff3ed;
-      --yellow:  #FFD93D;
-      --gray:    #F8F9FA;
-      --mid:     #6c757d;
-      --white:   #ffffff;
-      --radius:  12px;
-      --shadow:  0 4px 20px rgba(0,0,0,0.08);
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --navy:#1a2e4a;--navy2:#243d5f;
+      --orange:#ff6b2b;--orange2:#e55a1f;--orange-lt:#fff3ed;
+      --yellow:#ffd93d;--green:#22c55e;
+      --gray:#f8fafc;--border:#e2e8f0;
+      --mid:#64748b;--dark:#0f172a;
+      --white:#fff;
+      --r:14px;--r2:20px;
+      --sh:0 4px 24px rgba(0,0,0,.08);--sh2:0 12px 40px rgba(0,0,0,.14);
     }
+    body{font-family:'Inter',sans-serif;color:var(--dark);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
 
-    body { font-family: 'Open Sans', sans-serif; color: var(--navy); background: var(--white); line-height: 1.6; }
+    /* NAV */
+    nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 5%;height:66px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-family:'Nunito',sans-serif;font-size:26px;font-weight:900;text-decoration:none;color:var(--navy);letter-spacing:-.5px}
+    .logo span{color:var(--orange)}
+    .nav-links{display:flex;gap:32px;list-style:none}
+    .nav-links a{text-decoration:none;color:var(--mid);font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;transition:color .2s}
+    .nav-links a:hover{color:var(--orange)}
+    .nav-badge{background:var(--orange);color:#fff;font-size:9px;font-weight:800;padding:2px 6px;border-radius:20px;margin-left:3px;vertical-align:middle}
+    .nav-cta{background:var(--orange);color:#fff;padding:8px 20px;border-radius:30px;font-size:13px;font-weight:700;text-decoration:none;transition:background .2s}
+    .nav-cta:hover{background:var(--orange2)}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+    .hamburger span{width:22px;height:2px;background:var(--navy);border-radius:2px}
 
-    /* ── NAV ── */
-    nav {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 5%; height: 64px;
-      border-bottom: 2px solid #f0f0f0;
-      position: sticky; top: 0;
-      background: rgba(255,255,255,0.97);
-      backdrop-filter: blur(8px); z-index: 100;
+    /* HERO */
+    .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 60%,#2d4a6e 100%);padding:70px 5% 60px;display:grid;grid-template-columns:1fr 480px;gap:60px;align-items:center;overflow:hidden;position:relative}
+    .hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+    .hero-left{position:relative;z-index:1}
+    .hero-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:30px;margin-bottom:20px}
+    .hero-tag span{background:var(--orange);width:6px;height:6px;border-radius:50%;display:inline-block}
+    .hero-title{font-family:'Nunito',sans-serif;font-size:clamp(36px,4.5vw,58px);font-weight:900;line-height:1.1;color:#fff;margin-bottom:18px;letter-spacing:-.5px}
+    .hero-title em{color:var(--yellow);font-style:normal;display:block}
+    .hero-sub{font-size:16px;color:rgba(255,255,255,.75);margin-bottom:32px;max-width:420px;line-height:1.7}
+    .hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:36px}
+    .btn-primary{background:var(--orange);color:#fff;padding:14px 28px;border-radius:40px;font-size:14px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s;letter-spacing:.02em}
+    .btn-primary:hover{background:var(--orange2);transform:translateY(-2px)}
+    .btn-secondary{background:rgba(255,255,255,.12);color:#fff;padding:14px 24px;border-radius:40px;font-size:14px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.25);transition:all .2s}
+    .btn-secondary:hover{background:rgba(255,255,255,.2)}
+    .hero-stats{display:flex;gap:0}
+    .hero-stat{padding:0 24px 0 0;margin-right:24px;border-right:1px solid rgba(255,255,255,.15)}
+    .hero-stat:last-child{border:none}
+    .hero-stat strong{display:block;font-family:'Nunito',sans-serif;font-size:26px;font-weight:900;color:var(--yellow)}
+    .hero-stat span{font-size:12px;color:rgba(255,255,255,.6)}
+    .hero-right{position:relative;z-index:1}
+    .hero-img-wrap{position:relative;border-radius:var(--r2);overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.4)}
+    .hero-img-wrap img{width:100%;height:420px;object-fit:cover;display:block}
+    .hero-card{position:absolute;bottom:20px;left:20px;right:20px;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-radius:14px;padding:14px 18px;display:flex;align-items:center;gap:14px}
+    .hero-card-icon{font-size:32px;line-height:1}
+    .hero-card strong{font-family:'Nunito',sans-serif;font-size:15px;font-weight:800;color:var(--navy);display:block}
+    .hero-card span{font-size:12px;color:var(--mid)}
+    .hero-floats{position:absolute;top:20px;right:20px;display:flex;flex-direction:column;gap:8px}
+    .hero-float{background:rgba(255,255,255,.95);border-radius:12px;padding:8px 12px;font-size:12px;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:6px;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+
+    /* TICKER */
+    .ticker{background:var(--orange);padding:10px 0;overflow:hidden}
+    .ticker-track{display:flex;gap:40px;animation:ticker 22s linear infinite;white-space:nowrap;width:max-content}
+    .ticker-item{font-size:12px;font-weight:700;color:#fff;letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+    .ticker-dot{opacity:.5;font-size:8px}
+    @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+    /* SECTIONS */
+    .section{padding:56px 5%}
+    .section-alt{background:var(--gray)}
+    .sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px}
+    .sec-title{font-family:'Nunito',sans-serif;font-size:28px;font-weight:900;color:var(--navy)}
+    .sec-title span{color:var(--orange)}
+    .sec-link{font-size:13px;font-weight:700;color:var(--orange);text-decoration:none;display:flex;align-items:center;gap:4px}
+    .sec-link:hover{text-decoration:underline}
+
+    /* FILTER TABS */
+    .cat-tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+    .cat-tab{display:flex;align-items:center;gap:6px;padding:9px 18px;border-radius:40px;border:2px solid var(--border);background:var(--white);font-size:13px;font-weight:700;cursor:pointer;color:var(--mid);transition:all .2s;font-family:'Nunito',sans-serif}
+    .cat-tab .icon{font-size:16px}
+    .cat-tab.active,.cat-tab:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+    .age-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px}
+    .age-tab{padding:7px 16px;border-radius:30px;border:1.5px solid var(--border);background:var(--white);font-size:12px;font-weight:700;cursor:pointer;color:var(--mid);transition:all .2s;font-family:'Nunito',sans-serif}
+    .age-tab.active,.age-tab:hover{background:var(--orange);border-color:var(--orange);color:#fff}
+
+    /* PRODUCT GRID */
+    .product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px}
+    .p-card{background:var(--white);border-radius:var(--r);border:1.5px solid var(--border);overflow:hidden;transition:all .25s;display:flex;flex-direction:column;position:relative}
+    .p-card:hover{border-color:var(--orange);box-shadow:var(--sh2);transform:translateY(-4px)}
+    .p-card.hidden{display:none}
+    .p-img{position:relative;aspect-ratio:1;overflow:hidden;background:var(--gray)}
+    .p-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+    .p-card:hover .p-img img{transform:scale(1.06)}
+    .p-badge{position:absolute;top:10px;left:10px;font-size:10px;font-weight:800;padding:3px 10px;border-radius:20px;letter-spacing:.04em;text-transform:uppercase;z-index:1}
+    .badge-new{background:var(--navy);color:#fff}
+    .badge-hot{background:#ef4444;color:#fff}
+    .badge-deal{background:var(--yellow);color:var(--navy)}
+    .badge-top{background:var(--green);color:#fff}
+    .p-age{position:absolute;top:10px;right:10px;background:rgba(255,255,255,.95);border-radius:8px;padding:3px 8px;font-size:10px;font-weight:700;color:var(--navy);z-index:1}
+    .p-score{position:absolute;bottom:10px;right:10px;background:rgba(255,255,255,.95);border-radius:8px;padding:3px 8px;font-size:11px;font-weight:700;color:var(--navy);z-index:1}
+    .p-score em{color:var(--orange);font-style:normal}
+    .p-body{padding:14px;flex:1;display:flex;flex-direction:column}
+    .p-cat{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin-bottom:4px}
+    .p-title{font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;line-height:1.3;color:var(--navy);margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .p-review{font-size:12px;color:var(--mid);line-height:1.5;margin-bottom:8px;flex:1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .p-stars{display:flex;align-items:center;gap:4px;margin-bottom:12px}
+    .stars-fill{color:#f59e0b;font-size:12px}
+    .p-stars span{font-size:11px;color:var(--mid)}
+    .p-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
+    .p-price{font-family:'Nunito',sans-serif;font-size:22px;font-weight:900;color:var(--navy)}
+    .p-btn{background:var(--orange);color:#fff;padding:9px 16px;border-radius:30px;font-size:11px;font-weight:700;text-decoration:none;letter-spacing:.04em;text-transform:uppercase;transition:background .2s;white-space:nowrap}
+    .p-btn:hover{background:var(--orange2)}
+
+    /* GIFT GUIDES */
+    .gift-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+    .gift-card{background:var(--white);border:2px solid var(--border);border-radius:var(--r);padding:22px 14px;text-align:center;cursor:pointer;transition:all .2s}
+    .gift-card:hover{border-color:var(--orange);background:var(--orange-lt);transform:translateY(-3px)}
+    .gift-icon{font-size:36px;margin-bottom:10px}
+    .gift-name{font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:var(--navy);margin-bottom:4px}
+    .gift-sub{font-size:11px;color:var(--mid)}
+
+    /* SEASONAL */
+    .seasonal{padding:48px 5%;text-align:center;color:#fff}
+    .seasonal.xmas{background:linear-gradient(135deg,#b91c1c,#dc2626)}
+    .seasonal.spring{background:linear-gradient(135deg,#15803d,#16a34a)}
+    .seasonal.summer{background:linear-gradient(135deg,#b45309,#d97706)}
+    .seasonal.default{background:linear-gradient(135deg,var(--navy),var(--navy2))}
+    .seasonal-title{font-family:'Nunito',sans-serif;font-size:32px;font-weight:900;margin-bottom:10px}
+    .seasonal-sub{font-size:16px;opacity:.88;margin-bottom:24px}
+    .seasonal-btn{display:inline-block;background:#fff;padding:13px 32px;border-radius:40px;font-weight:800;font-size:14px;text-decoration:none;transition:transform .2s}
+    .seasonal-btn:hover{transform:scale(1.04)}
+    .seasonal-btn.xmas{color:#b91c1c}
+    .seasonal-btn.spring{color:#15803d}
+    .seasonal-btn.summer{color:#b45309}
+    .seasonal-btn.default{color:var(--navy)}
+
+    /* BLOG */
+    .blog-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:20px}
+    .b-card{border-radius:var(--r);overflow:hidden;background:var(--white);border:1.5px solid var(--border);cursor:pointer;transition:all .2s}
+    .b-card:hover{border-color:var(--orange);box-shadow:var(--sh);transform:translateY(-3px)}
+    .b-card img{width:100%;object-fit:cover;display:block}
+    .b-body{padding:18px 20px}
+    .b-tag{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+    .b-title{font-family:'Nunito',sans-serif;font-size:17px;font-weight:800;line-height:1.3;color:var(--navy);margin-bottom:8px}
+    .b-sum{font-size:13px;color:var(--mid);line-height:1.6}
+    .b-meta{font-size:11px;color:#94a3b8;margin-top:10px}
+
+    /* ARCHIVE */
+    .arc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+    .arc-card{background:var(--white);border:2px solid var(--border);border-radius:var(--r);padding:18px;cursor:pointer;transition:all .2s}
+    .arc-card:hover{border-color:var(--orange);transform:translateY(-2px);box-shadow:var(--sh)}
+    .arc-date{font-size:11px;color:var(--mid);margin-bottom:5px}
+    .arc-title{font-family:'Nunito',sans-serif;font-size:15px;font-weight:800;color:var(--navy);line-height:1.35;margin-bottom:5px}
+    .arc-sum{font-size:12px;color:var(--mid);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .arc-link{font-size:12px;font-weight:700;color:var(--orange);margin-top:8px;display:inline-block}
+
+    /* MODAL */
+    .modal-ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:999;align-items:flex-start;justify-content:center;padding:40px 20px;overflow-y:auto}
+    .modal-ov.open{display:flex}
+    .modal{background:#fff;border-radius:20px;max-width:720px;width:100%;overflow:hidden;position:relative}
+    .modal img{width:100%;height:260px;object-fit:cover;display:block}
+    .modal-body{padding:28px 32px}
+    .modal-close{position:absolute;top:14px;right:14px;background:rgba(255,255,255,.9);border:none;border-radius:50%;width:36px;height:36px;font-size:18px;cursor:pointer;font-weight:700;line-height:1;display:flex;align-items:center;justify-content:center}
+    .modal-title{font-family:'Nunito',sans-serif;font-size:24px;font-weight:900;color:var(--navy);margin-bottom:16px;line-height:1.2}
+    .modal-content h2{font-family:'Nunito',sans-serif;font-size:19px;font-weight:800;color:var(--navy);margin:20px 0 8px}
+    .modal-content p{margin-bottom:12px;color:#334155;line-height:1.8;font-size:15px}
+    .modal-content ul{padding-left:20px;margin-bottom:12px}
+    .modal-content li{margin-bottom:6px;color:#475569;font-size:14px}
+    .modal-content strong{color:var(--orange)}
+
+    /* NEWSLETTER */
+    .newsletter{background:var(--navy);color:#fff;text-align:center;padding:60px 5%}
+    .newsletter h2{font-family:'Nunito',sans-serif;font-size:32px;font-weight:900;margin-bottom:10px}
+    .newsletter p{color:rgba(255,255,255,.7);margin-bottom:28px;font-size:15px}
+    .nl-form{display:flex;max-width:460px;margin:0 auto;gap:0}
+    .nl-form input{flex:1;padding:14px 20px;border:none;border-radius:40px 0 0 40px;font-size:14px;outline:none}
+    .nl-form button{background:var(--orange);color:#fff;border:none;padding:14px 26px;border-radius:0 40px 40px 0;font-weight:700;font-size:13px;cursor:pointer;transition:background .2s;white-space:nowrap}
+    .nl-form button:hover{background:var(--orange2)}
+
+    /* AD */
+    .ad-wrap{text-align:center;padding:16px 5%;overflow:hidden}
+    .ad-wrap.alt{background:var(--gray)}
+    .ad-lbl{font-size:10px;color:#cbd5e1;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+
+    /* DISCLOSURE */
+    .disc{background:#fffbeb;border-top:1px solid #fde68a;padding:14px 5%;font-size:12px;color:#92400e;text-align:center}
+
+    /* FOOTER */
+    footer{background:#0f172a;color:#94a3b8;padding:52px 5% 28px}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+    .f-logo{font-family:'Nunito',sans-serif;font-size:24px;font-weight:900;color:#fff;text-decoration:none;display:block;margin-bottom:10px}
+    .f-logo span{color:var(--orange)}
+    .f-desc{font-size:13px;color:#475569;line-height:1.7}
+    .f-col h4{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;margin-bottom:14px}
+    .f-col ul{list-style:none}
+    .f-col li{margin-bottom:9px}
+    .f-col a{font-size:13px;color:#475569;text-decoration:none;transition:color .2s}
+    .f-col a:hover{color:var(--orange)}
+    .f-bottom{border-top:1px solid #1e293b;padding-top:20px;display:flex;justify-content:space-between;font-size:12px}
+
+    /* LOADING */
+    #loading{display:flex;align-items:center;justify-content:center;padding:60px;flex-direction:column;gap:14px;color:var(--mid);grid-column:1/-1}
+    .spin{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--orange);border-radius:50%;animation:spin .7s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+
+    /* RESPONSIVE */
+    @media(max-width:960px){
+      .hero{grid-template-columns:1fr;padding:48px 5%}
+      .hero-right{display:none}
+      .blog-grid{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      .nav-links,.nav-cta{display:none}
+      .hamburger{display:flex}
     }
-    .logo { font-family: 'Nunito', sans-serif; font-size: 24px; font-weight: 800; text-decoration: none; color: var(--navy); }
-    .logo span { color: var(--orange); }
-    .nav-links { display: flex; gap: 24px; list-style: none; }
-    .nav-links a { text-decoration: none; color: var(--navy); font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; transition: color .2s; }
-    .nav-links a:hover { color: var(--orange); }
-    .nav-badge { background: var(--orange); color: white; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; margin-left: 4px; }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
-    .hamburger span { width: 24px; height: 2px; background: var(--navy); border-radius: 2px; }
-
-    /* ── HERO ── */
-    .hero {
-      background: linear-gradient(135deg, var(--navy) 0%, #243d5c 100%);
-      color: white; padding: 60px 5%;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;
-    }
-    .hero-badge { display: inline-block; background: var(--orange); color: white; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 4px 14px; border-radius: 20px; margin-bottom: 16px; }
-    .hero-title { font-family: 'Nunito', sans-serif; font-size: clamp(32px, 4vw, 52px); font-weight: 800; line-height: 1.15; margin-bottom: 16px; }
-    .hero-title em { color: var(--yellow); font-style: normal; }
-    .hero-subtitle { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 28px; max-width: 440px; }
-    .hero-cta { display: inline-block; background: var(--orange); color: white; padding: 14px 32px; border-radius: 40px; font-size: 14px; font-weight: 700; text-decoration: none; transition: transform .2s, background .2s; letter-spacing: .04em; }
-    .hero-cta:hover { background: #e55a1f; transform: translateY(-2px); }
-    .hero-stats { display: flex; gap: 28px; margin-top: 24px; }
-    .hero-stat { text-align: center; }
-    .hero-stat strong { display: block; font-family: 'Nunito', sans-serif; font-size: 24px; font-weight: 800; color: var(--yellow); }
-    .hero-stat span { font-size: 12px; color: rgba(255,255,255,0.7); }
-    .hero-image { position: relative; border-radius: 20px; overflow: hidden; height: 380px; }
-    .hero-image img { width: 100%; height: 100%; object-fit: cover; }
-    .hero-overlay { position: absolute; bottom: 16px; left: 16px; right: 16px; background: rgba(255,255,255,0.95); border-radius: 12px; padding: 12px 16px; display: flex; align-items: center; gap: 12px; }
-    .hero-overlay-icon { font-size: 28px; }
-    .hero-overlay strong { font-family: 'Nunito', sans-serif; font-size: 14px; font-weight: 700; color: var(--navy); }
-    .hero-overlay span { font-size: 12px; color: var(--mid); }
-
-    /* ── TICKER ── */
-    .ticker { background: var(--orange); color: white; padding: 8px 0; overflow: hidden; }
-    .ticker-track { display: flex; gap: 48px; animation: ticker 25s linear infinite; white-space: nowrap; width: max-content; }
-    .ticker-track span { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-    .ticker-track .dot { opacity: .6; }
-    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-
-    /* ── AGE FILTER ── */
-    .age-section { padding: 32px 5% 0; }
-    .age-title { font-family: 'Nunito', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 14px; }
-    .age-pills { display: flex; gap: 10px; flex-wrap: wrap; }
-    .age-pill { padding: 8px 20px; border-radius: 30px; border: 2px solid #ddd; font-size: 13px; font-weight: 700; cursor: pointer; background: transparent; color: var(--mid); transition: all .2s; font-family: 'Nunito', sans-serif; }
-    .age-pill.active, .age-pill:hover { background: var(--navy); border-color: var(--navy); color: white; }
-
-    /* ── SECTIONS ── */
-    .section { padding: 48px 5%; }
-    .section-alt { background: var(--gray); }
-    .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 28px; }
-    .section-title { font-family: 'Nunito', sans-serif; font-size: 26px; font-weight: 800; }
-    .section-link { font-size: 13px; font-weight: 700; color: var(--orange); text-decoration: none; border-bottom: 1px solid var(--orange); }
-
-    /* ── CATEGORY GRID ── */
-    .category-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; margin-bottom: 36px; }
-    .cat-card { background: white; border: 2px solid #eee; border-radius: var(--radius); padding: 16px 8px; text-align: center; cursor: pointer; transition: all .2s; }
-    .cat-card:hover, .cat-card.active { border-color: var(--orange); background: var(--orange-lt); }
-    .cat-icon { font-size: 28px; margin-bottom: 6px; }
-    .cat-name { font-family: 'Nunito', sans-serif; font-size: 12px; font-weight: 700; color: var(--navy); }
-
-    /* ── PRODUCT GRID ── */
-    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
-    .product-card { background: white; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: transform .25s, box-shadow .25s; display: flex; flex-direction: column; }
-    .product-card:hover { transform: translateY(-5px); box-shadow: 0 12px 36px rgba(0,0,0,0.13); }
-    .product-card.hidden { display: none; }
-    .card-img-wrap { position: relative; aspect-ratio: 1; overflow: hidden; background: var(--gray); }
-    .card-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
-    .product-card:hover .card-img-wrap img { transform: scale(1.06); }
-    .card-badge { position: absolute; top: 10px; left: 10px; font-size: 10px; font-weight: 700; padding: 3px 9px; border-radius: 20px; letter-spacing: .06em; text-transform: uppercase; }
-    .badge-new   { background: var(--navy); color: white; }
-    .badge-hot   { background: #e74c3c; color: white; }
-    .badge-deal  { background: var(--yellow); color: var(--navy); }
-    .badge-top   { background: #27ae60; color: white; }
-    .card-age { position: absolute; top: 10px; right: 10px; background: rgba(255,255,255,0.92); border-radius: 8px; padding: 3px 8px; font-size: 10px; font-weight: 700; color: var(--navy); }
-    .card-score { position: absolute; bottom: 10px; right: 10px; background: rgba(255,255,255,0.92); border-radius: 8px; padding: 3px 8px; font-size: 11px; font-weight: 700; }
-    .card-score span { color: var(--orange); }
-    .card-body { padding: 14px; flex: 1; display: flex; flex-direction: column; }
-    .card-category { font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--orange); margin-bottom: 4px; }
-    .card-title { font-family: 'Nunito', sans-serif; font-size: 14px; font-weight: 700; line-height: 1.35; margin-bottom: 6px; color: var(--navy); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-    .card-review { font-size: 12px; color: var(--mid); line-height: 1.5; margin-bottom: 8px; flex: 1; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-    .card-stars { font-size: 12px; color: #f39c12; margin-bottom: 10px; }
-    .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; }
-    .card-price { font-family: 'Nunito', sans-serif; font-size: 20px; font-weight: 800; color: var(--navy); }
-    .card-btn { background: var(--orange); color: white; padding: 8px 16px; border-radius: 30px; font-size: 11px; font-weight: 700; text-decoration: none; letter-spacing: .04em; text-transform: uppercase; transition: background .2s; }
-    .card-btn:hover { background: #e55a1f; }
-
-    /* ── SEASONAL BANNER ── */
-    .seasonal-banner { background: linear-gradient(135deg, #c0392b, #e74c3c); color: white; padding: 32px 5%; text-align: center; }
-    .seasonal-banner.summer { background: linear-gradient(135deg, #f39c12, #e67e22); }
-    .seasonal-banner.spring { background: linear-gradient(135deg, #27ae60, #2ecc71); }
-    .seasonal-title { font-family: 'Nunito', sans-serif; font-size: 28px; font-weight: 800; margin-bottom: 8px; }
-    .seasonal-sub { font-size: 15px; opacity: .9; margin-bottom: 20px; }
-    .seasonal-btn { display: inline-block; background: white; color: #c0392b; padding: 12px 28px; border-radius: 30px; font-weight: 700; text-decoration: none; font-size: 14px; transition: transform .2s; }
-    .seasonal-btn:hover { transform: scale(1.04); }
-
-    /* ── BLOG ── */
-    .blog-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; }
-    .blog-card { border-radius: var(--radius); overflow: hidden; background: white; box-shadow: var(--shadow); cursor: pointer; transition: transform .2s; }
-    .blog-card:hover { transform: translateY(-3px); }
-    .blog-card img { width: 100%; object-fit: cover; }
-    .blog-card-body { padding: 18px 20px; }
-    .blog-tag { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--orange); margin-bottom: 6px; }
-    .blog-title { font-family: 'Nunito', sans-serif; font-size: 17px; font-weight: 700; line-height: 1.3; margin-bottom: 8px; color: var(--navy); }
-    .blog-summary { font-size: 13px; color: var(--mid); line-height: 1.6; }
-    .blog-meta { font-size: 11px; color: #aaa; margin-top: 10px; }
-    .blog-featured img { height: 280px; }
-
-    /* ── BLOG ARŞİVİ ── */
-    .archive-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
-    .archive-card { background: white; border: 2px solid #eee; border-radius: var(--radius); padding: 18px; cursor: pointer; transition: all .2s; }
-    .archive-card:hover { border-color: var(--orange); transform: translateY(-2px); }
-    .archive-date { font-size: 11px; color: var(--mid); margin-bottom: 6px; }
-    .archive-title { font-family: 'Nunito', sans-serif; font-size: 15px; font-weight: 700; color: var(--navy); line-height: 1.35; margin-bottom: 6px; }
-    .archive-summary { font-size: 12px; color: var(--mid); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-    .archive-read { font-size: 12px; font-weight: 700; color: var(--orange); margin-top: 8px; display: inline-block; }
-
-    /* ── BLOG MODAL ── */
-    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 999; align-items: flex-start; justify-content: center; padding: 40px 20px; overflow-y: auto; }
-    .modal-overlay.open { display: flex; }
-    .modal { background: white; border-radius: 16px; max-width: 720px; width: 100%; overflow: hidden; position: relative; }
-    .modal img { width: 100%; height: 280px; object-fit: cover; }
-    .modal-body { padding: 28px 32px; }
-    .modal-close { position: absolute; top: 14px; right: 16px; background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 34px; height: 34px; font-size: 16px; cursor: pointer; font-weight: 700; }
-    .modal-title { font-family: 'Nunito', sans-serif; font-size: 24px; font-weight: 800; margin-bottom: 16px; color: var(--navy); }
-    .modal-content h2 { font-family: 'Nunito', sans-serif; font-size: 18px; font-weight: 700; margin: 20px 0 8px; color: var(--navy); }
-    .modal-content p  { margin-bottom: 12px; color: #333; line-height: 1.75; font-size: 15px; }
-    .modal-content ul { padding-left: 20px; margin-bottom: 12px; }
-    .modal-content li { margin-bottom: 6px; color: #444; font-size: 14px; }
-    .modal-content strong { color: var(--orange); }
-
-    /* ── NEWSLETTER ── */
-    .newsletter { background: var(--navy); color: white; text-align: center; padding: 56px 5%; }
-    .newsletter h2 { font-family: 'Nunito', sans-serif; font-size: 30px; font-weight: 800; margin-bottom: 10px; }
-    .newsletter p { color: rgba(255,255,255,0.75); margin-bottom: 24px; }
-    .newsletter-form { display: flex; max-width: 460px; margin: 0 auto; }
-    .newsletter-form input { flex: 1; padding: 13px 18px; border: none; border-radius: 40px 0 0 40px; font-size: 14px; outline: none; }
-    .newsletter-form button { background: var(--orange); color: white; border: none; padding: 13px 24px; border-radius: 0 40px 40px 0; font-weight: 700; font-size: 13px; cursor: pointer; transition: background .2s; }
-    .newsletter-form button:hover { background: #e55a1f; }
-
-    /* ── AD ── */
-    .ad-container { text-align: center; padding: 16px 5%; background: white; overflow: hidden; }
-    .ad-container.alt { background: var(--gray); }
-    .ad-label { font-size: 10px; color: #bbb; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; }
-
-    /* ── DISCLOSURE ── */
-    .disclosure { background: #fffbf0; border-top: 1px solid #f0e8c8; padding: 14px 5%; font-size: 12px; color: #888; text-align: center; }
-
-    /* ── FOOTER ── */
-    footer { background: #111; color: #aaa; padding: 48px 5% 24px; }
-    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 36px; margin-bottom: 36px; }
-    .footer-logo { font-family: 'Nunito', sans-serif; font-size: 22px; font-weight: 800; color: white; text-decoration: none; display: block; margin-bottom: 10px; }
-    .footer-logo span { color: var(--orange); }
-    .footer-brand p { font-size: 13px; color: #666; line-height: 1.6; }
-    .footer-col h4 { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: white; margin-bottom: 12px; }
-    .footer-col ul { list-style: none; }
-    .footer-col li { margin-bottom: 8px; }
-    .footer-col a { font-size: 13px; color: #666; text-decoration: none; transition: color .2s; }
-    .footer-col a:hover { color: var(--orange); }
-    .footer-bottom { border-top: 1px solid #222; padding-top: 18px; display: flex; justify-content: space-between; font-size: 12px; }
-
-    /* ── LOADING ── */
-    #loading { display: flex; align-items: center; justify-content: center; padding: 60px; flex-direction: column; gap: 14px; color: var(--mid); }
-    .spinner { width: 36px; height: 36px; border: 3px solid #eee; border-top-color: var(--orange); border-radius: 50%; animation: spin .7s linear infinite; }
-    @keyframes spin { to { transform: rotate(360deg); } }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-image { height: 260px; }
-      .blog-grid { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
-      .nav-links { display: none; }
-      .hamburger { display: flex; }
-    }
-    @media (max-width: 560px) {
-      .hero { padding: 40px 5%; }
-      .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .footer-grid { grid-template-columns: 1fr; }
-      .newsletter-form { flex-direction: column; }
-      .newsletter-form input { border-radius: 40px; margin-bottom: 8px; }
-      .newsletter-form button { border-radius: 40px; }
+    @media(max-width:560px){
+      .product-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+      .footer-grid{grid-template-columns:1fr}
+      .nl-form{flex-direction:column}
+      .nl-form input{border-radius:40px;margin-bottom:8px}
+      .nl-form button{border-radius:40px}
+      .gift-grid{grid-template-columns:repeat(3,1fr)}
     }
   </style>
 </head>
 <body>
 
-<!-- ══ NAV ══ -->
+<!-- NAV -->
 <nav>
   <a href="/" class="logo">Rocco<span>Zoom</span></a>
-  <ul class="nav-links" id="navLinks">
+  <ul class="nav-links">
     <li><a href="#shop">Shop <span class="nav-badge">New</span></a></li>
     <li><a href="#gift-guides">Gift Guides</a></li>
     <li><a href="#blog">Blog</a></li>
     <li><a href="#newsletter">Newsletter</a></li>
   </ul>
+  <a href="https://www.amazon.com/s?k=best+toys+kids&tag=roccozoom-20" class="nav-cta" target="_blank" rel="noopener sponsored">Shop Amazon →</a>
   <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
 </nav>
 
-<!-- ══ HERO ══ -->
+<!-- HERO -->
 <section class="hero">
-  <div>
-    <span class="hero-badge">🎁 Updated Daily</span>
-    <h1 class="hero-title">Every Kid's Dream.<br/><em>Every Parent's Budget.</em></h1>
-    <p class="hero-subtitle">The best toys and action figures on Amazon — curated daily by toy enthusiasts. Rated, reviewed, and ready to ship.</p>
-    <a href="#shop" class="hero-cta">Shop Today's Picks →</a>
+  <div class="hero-left">
+    <div class="hero-tag"><span></span> Updated Every Day</div>
+    <h1 class="hero-title">Every Kid's Dream.<em>Every Parent's Budget.</em></h1>
+    <p class="hero-sub">The best toys and action figures on Amazon — curated daily. Real ratings, real reviews, ready to ship with Prime.</p>
+    <div class="hero-btns">
+      <a href="#shop" class="btn-primary">🎯 Shop Today's Picks</a>
+      <a href="#gift-guides" class="btn-secondary">🎁 Gift Guides</a>
+    </div>
     <div class="hero-stats">
       <div class="hero-stat"><strong>500+</strong><span>Toys Reviewed</span></div>
       <div class="hero-stat"><strong>Daily</strong><span>New Picks</span></div>
       <div class="hero-stat"><strong>4.5★</strong><span>Avg Rating</span></div>
     </div>
   </div>
-  <div class="hero-image">
-    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=900&auto=format&fit=crop" alt="Toys"/>
-    <div class="hero-overlay">
-      <div class="hero-overlay-icon">🏆</div>
-      <div>
-        <strong>Top Rated This Week</strong>
-        <span style="display:block;font-size:12px;color:#666;">Hand-picked from 1,000+ Amazon reviews</span>
+  <div class="hero-right">
+    <div class="hero-floats">
+      <div class="hero-float">🔥 Trending Now</div>
+      <div class="hero-float">⚡ Prime Shipping</div>
+    </div>
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=900&auto=format&fit=crop" alt="Best Toys on Amazon"/>
+      <div class="hero-card">
+        <div class="hero-card-icon">🏆</div>
+        <div>
+          <strong>Top Rated This Week</strong>
+          <span>Hand-picked from 1,000+ Amazon reviews</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ TICKER ══ -->
+<!-- TICKER -->
 <div class="ticker">
   <div class="ticker-track">
-    <span>Free Shipping with Prime</span><span class="dot">✦</span>
-    <span>New Toys Every Day</span><span class="dot">✦</span>
-    <span>All Products on Amazon</span><span class="dot">✦</span>
-    <span>Ages 1 to 14+</span><span class="dot">✦</span>
-    <span>Action Figures</span><span class="dot">✦</span>
-    <span>Dinosaurs & Creatures</span><span class="dot">✦</span>
-    <span>Playsets & Vehicles</span><span class="dot">✦</span>
-    <span>Free Shipping with Prime</span><span class="dot">✦</span>
-    <span>New Toys Every Day</span><span class="dot">✦</span>
-    <span>All Products on Amazon</span><span class="dot">✦</span>
-    <span>Ages 1 to 14+</span><span class="dot">✦</span>
-    <span>Action Figures</span><span class="dot">✦</span>
-    <span>Dinosaurs & Creatures</span><span class="dot">✦</span>
-    <span>Playsets & Vehicles</span><span class="dot">✦</span>
+    <span class="ticker-item"><span>🚀</span> Free Shipping with Prime</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item"><span>🎯</span> New Toys Every Day</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item"><span>🦕</span> Dinosaurs & Action Figures</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item"><span>⭐</span> 4.5+ Star Ratings Only</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item"><span>🎁</span> Gift Guides for Every Age</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item"><span>💰</span> Best Value on Amazon</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item"><span>🚀</span> Free Shipping with Prime</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item"><span>🎯</span> New Toys Every Day</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item"><span>🦕</span> Dinosaurs & Action Figures</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item"><span>⭐</span> 4.5+ Star Ratings Only</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item"><span>🎁</span> Gift Guides for Every Age</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item"><span>💰</span> Best Value on Amazon</span><span class="ticker-dot">◆</span>
   </div>
 </div>
 
-<!-- ══ SHOP ══ -->
+<!-- SHOP -->
 <section class="section" id="shop">
-  <div class="section-header">
-    <h2 class="section-title">Today's Top Picks</h2>
-    <a href="https://www.amazon.com/s?k=best+toys+for+kids&tag=roccozoom-20" class="section-link" target="_blank" rel="noopener sponsored">View All on Amazon →</a>
+  <div class="sec-head">
+    <h2 class="sec-title">Today's <span>Top Picks</span></h2>
+    <a href="https://www.amazon.com/s?k=best+toys+kids+2026&tag=roccozoom-20" class="sec-link" target="_blank" rel="noopener sponsored">View All on Amazon →</a>
   </div>
 
-  <!-- Category Filter -->
-  <div class="category-grid" id="categoryGrid">
-    <div class="cat-card active" onclick="filterCat('All', this)"><div class="cat-icon">🎯</div><div class="cat-name">All Toys</div></div>
-    <div class="cat-card" onclick="filterCat('Action Figures', this)"><div class="cat-icon">🦸</div><div class="cat-name">Action Figures</div></div>
-    <div class="cat-card" onclick="filterCat('Dinosaurs', this)"><div class="cat-icon">🦕</div><div class="cat-name">Dinosaurs</div></div>
-    <div class="cat-card" onclick="filterCat('Playsets', this)"><div class="cat-icon">🏰</div><div class="cat-name">Playsets</div></div>
-    <div class="cat-card" onclick="filterCat('Vehicles', this)"><div class="cat-icon">🚗</div><div class="cat-name">Vehicles</div></div>
-    <div class="cat-card" onclick="filterCat('Educational', this)"><div class="cat-icon">🧪</div><div class="cat-name">Educational</div></div>
-    <div class="cat-card" onclick="filterCat('Fantasy', this)"><div class="cat-icon">🐉</div><div class="cat-name">Fantasy</div></div>
-    <div class="cat-card" onclick="filterCat('Animals', this)"><div class="cat-icon">🦁</div><div class="cat-name">Animals</div></div>
+  <!-- Category Tabs -->
+  <div class="cat-tabs" id="catTabs">
+    <button class="cat-tab active" onclick="filterCat('All',this)"><span class="icon">🎯</span>All Toys</button>
+    <button class="cat-tab" onclick="filterCat('Action Figures',this)"><span class="icon">🦸</span>Action Figures</button>
+    <button class="cat-tab" onclick="filterCat('Dinosaurs',this)"><span class="icon">🦕</span>Dinosaurs</button>
+    <button class="cat-tab" onclick="filterCat('Playsets',this)"><span class="icon">🏰</span>Playsets</button>
+    <button class="cat-tab" onclick="filterCat('Vehicles',this)"><span class="icon">🚗</span>Vehicles</button>
+    <button class="cat-tab" onclick="filterCat('Educational',this)"><span class="icon">🧪</span>STEM</button>
+    <button class="cat-tab" onclick="filterCat('Fantasy',this)"><span class="icon">🐉</span>Fantasy</button>
+    <button class="cat-tab" onclick="filterCat('Animals',this)"><span class="icon">🦁</span>Animals</button>
   </div>
 
-  <!-- Age Filter -->
-  <div style="margin-bottom:28px;">
-    <div class="age-pills">
-      <button class="age-pill active" onclick="filterAge('All', this)">All Ages</button>
-      <button class="age-pill" onclick="filterAge('1-3', this)">Ages 1–3</button>
-      <button class="age-pill" onclick="filterAge('3-5', this)">Ages 3–5</button>
-      <button class="age-pill" onclick="filterAge('6-9', this)">Ages 6–9</button>
-      <button class="age-pill" onclick="filterAge('10+', this)">Ages 10+</button>
-      <button class="age-pill" onclick="filterAge('Collector', this)">Collectors</button>
-    </div>
+  <!-- Age Tabs -->
+  <div class="age-tabs" id="ageTabs">
+    <button class="age-tab active" onclick="filterAge('All',this)">All Ages</button>
+    <button class="age-tab" onclick="filterAge('1-3',this)">👶 Ages 1–3</button>
+    <button class="age-tab" onclick="filterAge('3-5',this)">🧒 Ages 3–5</button>
+    <button class="age-tab" onclick="filterAge('6-9',this)">🎮 Ages 6–9</button>
+    <button class="age-tab" onclick="filterAge('10+',this)">🎯 Ages 10+</button>
+    <button class="age-tab" onclick="filterAge('Collector',this)">🏆 Collectors</button>
   </div>
 
-  <div id="loading"><div class="spinner"></div><span>Loading today's top toys...</span></div>
-  <div class="product-grid" id="productGrid"></div>
+  <div class="product-grid" id="productGrid">
+    <div id="loading"><div class="spin"></div><span>Loading today's top toys...</span></div>
+  </div>
 </section>
 
-<!-- ══ AD 1 ══ -->
-<div class="ad-container">
-  <div class="ad-label">Advertisement</div>
+<!-- AD 1 -->
+<div class="ad-wrap">
+  <div class="ad-lbl">Advertisement</div>
   <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4267818870826080" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 
-<!-- ══ GIFT GUIDES ══ -->
+<!-- GIFT GUIDES -->
 <section class="section section-alt" id="gift-guides">
-  <div class="section-header">
-    <h2 class="section-title">🎁 Gift Guides</h2>
+  <div class="sec-head">
+    <h2 class="sec-title">🎁 Gift <span>Guides</span></h2>
+    <span style="font-size:13px;color:var(--mid)">Find the perfect toy by age</span>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;" id="giftGuideGrid">
-    <div onclick="filterCat('All',null);filterAge('1-3',null)" style="background:white;border-radius:12px;padding:20px;text-align:center;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''"><div style="font-size:32px;margin-bottom:8px;">👶</div><div style="font-family:Nunito,sans-serif;font-weight:700;color:#1A2E4A;">Toddlers 1–3</div><div style="font-size:12px;color:#6c757d;margin-top:4px;">Safe & Fun</div></div>
-    <div onclick="filterCat('All',null);filterAge('3-5',null)" style="background:white;border-radius:12px;padding:20px;text-align:center;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''"><div style="font-size:32px;margin-bottom:8px;">🧒</div><div style="font-family:Nunito,sans-serif;font-weight:700;color:#1A2E4A;">Kids 3–5</div><div style="font-size:12px;color:#6c757d;margin-top:4px;">Imaginative Play</div></div>
-    <div onclick="filterCat('All',null);filterAge('6-9',null)" style="background:white;border-radius:12px;padding:20px;text-align:center;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''"><div style="font-size:32px;margin-bottom:8px;">🎮</div><div style="font-family:Nunito,sans-serif;font-weight:700;color:#1A2E4A;">Kids 6–9</div><div style="font-size:12px;color:#6c757d;margin-top:4px;">Adventure & Action</div></div>
-    <div onclick="filterCat('All',null);filterAge('10+',null)" style="background:white;border-radius:12px;padding:20px;text-align:center;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''"><div style="font-size:32px;margin-bottom:8px;">🎯</div><div style="font-family:Nunito,sans-serif;font-weight:700;color:#1A2E4A;">Tweens 10+</div><div style="font-size:12px;color:#6c757d;margin-top:4px;">Complex & Cool</div></div>
-    <div onclick="filterCat('All',null);filterAge('Collector',null)" style="background:white;border-radius:12px;padding:20px;text-align:center;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''"><div style="font-size:32px;margin-bottom:8px;">🏆</div><div style="font-family:Nunito,sans-serif;font-weight:700;color:#1A2E4A;">Collectors</div><div style="font-size:12px;color:#6c757d;margin-top:4px;">Premium Figures</div></div>
-    <div onclick="filterCat('Educational',null)" style="background:white;border-radius:12px;padding:20px;text-align:center;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''"><div style="font-size:32px;margin-bottom:8px;">🧪</div><div style="font-family:Nunito,sans-serif;font-weight:700;color:#1A2E4A;">STEM Toys</div><div style="font-size:12px;color:#6c757d;margin-top:4px;">Learn & Play</div></div>
+  <div class="gift-grid">
+    <div class="gift-card" onclick="filterAge('1-3',null);scrollTo('shop')"><div class="gift-icon">👶</div><div class="gift-name">Toddlers 1–3</div><div class="gift-sub">Safe & Fun</div></div>
+    <div class="gift-card" onclick="filterAge('3-5',null);scrollTo('shop')"><div class="gift-icon">🧒</div><div class="gift-name">Kids 3–5</div><div class="gift-sub">Imaginative Play</div></div>
+    <div class="gift-card" onclick="filterAge('6-9',null);scrollTo('shop')"><div class="gift-icon">🎮</div><div class="gift-name">Kids 6–9</div><div class="gift-sub">Action & Adventure</div></div>
+    <div class="gift-card" onclick="filterAge('10+',null);scrollTo('shop')"><div class="gift-icon">🎯</div><div class="gift-name">Tweens 10+</div><div class="gift-sub">Complex & Cool</div></div>
+    <div class="gift-card" onclick="filterAge('Collector',null);scrollTo('shop')"><div class="gift-icon">🏆</div><div class="gift-name">Collectors</div><div class="gift-sub">Premium Figures</div></div>
+    <div class="gift-card" onclick="filterCat('Educational',null);scrollTo('shop')"><div class="gift-icon">🧪</div><div class="gift-name">STEM Toys</div><div class="gift-sub">Learn & Play</div></div>
+    <div class="gift-card" onclick="filterCat('Dinosaurs',null);scrollTo('shop')"><div class="gift-icon">🦕</div><div class="gift-name">Dino Fans</div><div class="gift-sub">Prehistoric Fun</div></div>
+    <div class="gift-card" onclick="filterCat('Action Figures',null);scrollTo('shop')"><div class="gift-icon">🦸</div><div class="gift-name">Hero Fans</div><div class="gift-sub">Action Figures</div></div>
   </div>
 </section>
 
-<!-- ══ SEASONAL BANNER ══ -->
-<div class="seasonal-banner" id="seasonalBanner">
-  <div class="seasonal-title" id="seasonalTitle">🎄 Holiday Toy Gift Guide 2026</div>
-  <div class="seasonal-sub" id="seasonalSub">The most wished-for toys this season — all on Amazon with fast Prime shipping</div>
-  <a href="https://www.amazon.com/s?k=best+holiday+toys+2026&tag=roccozoom-20" class="seasonal-btn" target="_blank" rel="noopener sponsored">Shop Holiday Picks →</a>
+<!-- SEASONAL -->
+<div class="seasonal default" id="seasonal">
+  <div class="seasonal-title" id="seasonal-title">🎁 Top Rated Toys This Season</div>
+  <div class="seasonal-sub" id="seasonal-sub">Hand-picked bestsellers with thousands of 5-star reviews — all on Amazon</div>
+  <a href="https://www.amazon.com/s?k=best+toys+2026&tag=roccozoom-20" class="seasonal-btn default" id="seasonal-btn" target="_blank" rel="noopener sponsored">Shop Seasonal Picks →</a>
 </div>
 
-<!-- ══ BLOG ══ -->
+<!-- BLOG -->
 <section class="section" id="blog">
-  <div class="section-header">
-    <h2 class="section-title">Toy Guides & Reviews</h2>
+  <div class="sec-head">
+    <h2 class="sec-title">Toy Guides <span>& Reviews</span></h2>
   </div>
   <div class="blog-grid" id="blogGrid">
-    <div id="loading2"><div class="spinner"></div></div>
+    <div><div class="spin"></div></div>
   </div>
 </section>
 
-<!-- ══ AD 2 ══ -->
-<div class="ad-container alt">
-  <div class="ad-label">Advertisement</div>
+<!-- AD 2 -->
+<div class="ad-wrap alt">
+  <div class="ad-lbl">Advertisement</div>
   <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4267818870826080" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 
-<!-- ══ BLOG ARŞİVİ ══ -->
+<!-- ARCHIVE -->
 <section class="section section-alt" id="all-posts">
-  <div class="section-header">
-    <h2 class="section-title">All Toy Guides</h2>
+  <div class="sec-head">
+    <h2 class="sec-title">All Toy <span>Guides</span></h2>
     <span style="font-size:13px;color:var(--mid)">Updated weekly</span>
   </div>
-  <div class="archive-grid" id="archiveGrid">
+  <div class="arc-grid" id="archiveGrid">
     <div style="color:var(--mid);font-size:14px;">Loading guides...</div>
   </div>
 </section>
 
-<!-- ══ NEWSLETTER ══ -->
+<!-- NEWSLETTER -->
 <div class="newsletter" id="newsletter">
   <h2>🎁 Get Weekly Toy Deals</h2>
-  <p>Join 3,000+ parents who get the best Amazon toy deals every Thursday — free.</p>
-  <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+  <p>Join 3,000+ parents getting the best Amazon toy deals every Thursday — free.</p>
+  <form class="nl-form" onsubmit="handleSub(event)">
     <input type="email" placeholder="Your email address" required/>
-    <button type="submit">Subscribe</button>
+    <button type="submit">Subscribe Free</button>
   </form>
 </div>
 
-<!-- ══ DISCLOSURE ══ -->
-<div class="disclosure">
-  <strong>Affiliate Disclosure:</strong> As an Amazon Associate, roccozoom.com earns from qualifying purchases. Clicking product links may earn us a small commission at no extra cost to you.
+<!-- DISCLOSURE -->
+<div class="disc">
+  <strong>Affiliate Disclosure:</strong> As an Amazon Associate, roccozoom.com earns from qualifying purchases. Links on this page may earn us a small commission at no extra cost to you.
 </div>
 
-<!-- ══ FOOTER ══ -->
+<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
-    <div class="footer-brand">
-      <a href="/" class="footer-logo">Rocco<span>Zoom</span></a>
-      <p>Your daily source for the best toys and action figures on Amazon. Curated by toy enthusiasts, for kids and parents.</p>
+    <div>
+      <a href="/" class="f-logo">Rocco<span>Zoom</span></a>
+      <p class="f-desc">Your daily source for the best toys and action figures on Amazon. Curated by toy enthusiasts, for kids and parents who want the best value.</p>
     </div>
-    <div class="footer-col">
-      <h4>Shop</h4>
+    <div class="f-col">
+      <h4>Shop by Category</h4>
       <ul>
         <li><a href="#" onclick="filterCat('Action Figures',null)">Action Figures</a></li>
         <li><a href="#" onclick="filterCat('Dinosaurs',null)">Dinosaurs</a></li>
         <li><a href="#" onclick="filterCat('Playsets',null)">Playsets</a></li>
         <li><a href="#" onclick="filterCat('Vehicles',null)">Vehicles</a></li>
-        <li><a href="#" onclick="filterCat('Educational',null)">Educational</a></li>
+        <li><a href="#" onclick="filterCat('Educational',null)">STEM Toys</a></li>
+        <li><a href="#" onclick="filterCat('Fantasy',null)">Fantasy</a></li>
       </ul>
     </div>
-    <div class="footer-col">
+    <div class="f-col">
       <h4>Gift Guides</h4>
       <ul>
         <li><a href="#" onclick="filterAge('1-3',null)">Toddlers 1–3</a></li>
@@ -416,251 +434,224 @@
         <li><a href="#" onclick="filterAge('Collector',null)">Collectors</a></li>
       </ul>
     </div>
-    <div class="footer-col">
+    <div class="f-col">
       <h4>Legal</h4>
       <ul>
         <li><a href="/privacy.html">Privacy Policy</a></li>
         <li><a href="/disclosure.html">Affiliate Disclosure</a></li>
         <li><a href="/terms.html">Terms of Use</a></li>
+        <li><a href="#blog">Toy Blog</a></li>
       </ul>
     </div>
   </div>
-  <div class="footer-bottom">
+  <div class="f-bottom">
     <span>© 2026 RoccoZoom. All rights reserved.</span>
-    <a href="https://www.amazon.com/s?k=best+toys&tag=roccozoom-20" target="_blank" rel="noopener">Shop on Amazon</a>
+    <a href="https://www.amazon.com/s?k=best+toys&tag=roccozoom-20" target="_blank" rel="noopener" style="color:#475569">Shop on Amazon</a>
   </div>
 </footer>
 
-<!-- ══ BLOG MODAL ══ -->
-<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+<!-- MODAL -->
+<div class="modal-ov" id="modalOv" onclick="closeModal(event)">
   <div class="modal">
     <button class="modal-close" onclick="closeModalBtn()">✕</button>
-    <img id="modalImg" src="" alt=""/>
+    <img id="mImg" src="" alt=""/>
     <div class="modal-body">
-      <div class="blog-tag">🎯 Toy Guide</div>
-      <h2 class="modal-title" id="modalTitle"></h2>
-      <div class="modal-content" id="modalContent"></div>
+      <div class="b-tag">🎯 Toy Guide</div>
+      <h2 class="modal-title" id="mTitle"></h2>
+      <div class="modal-content" id="mContent"></div>
     </div>
   </div>
 </div>
 
 <script>
-// ── DATA ──
-let allProducts = [];
-let blogData    = {};
-let currentCat  = 'All';
-let currentAge  = 'All';
+let allProducts=[], blogData={}, currentCat='All', currentAge='All';
 
-async function loadData() {
-  try {
-    const res  = await fetch('website_data.json?v=' + Date.now());
-    const data = await res.json();
-    allProducts = data.products || [];
-    blogData    = data.blog     || {};
+// LOAD DATA
+async function loadData(){
+  try{
+    const r=await fetch('website_data.json?v='+Date.now());
+    const d=await r.json();
+    allProducts=d.products||[];
+    blogData=d.blog||{};
     renderProducts();
-    renderBlog(blogData);
-    setSeasonalBanner();
-  } catch(e) {
-    document.getElementById('loading').innerHTML = '<p style="color:#888">Could not load products. Please refresh.</p>';
+    renderBlog();
+    setSeasonal();
+  }catch(e){
+    document.getElementById('productGrid').innerHTML='<p style="color:var(--mid);padding:20px;grid-column:1/-1">Could not load products. Please refresh.</p>';
   }
 }
 
-// ── SEASONAL BANNER ──
-function setSeasonalBanner() {
-  const m = new Date().getMonth();
-  const banner = document.getElementById('seasonalBanner');
-  const title  = document.getElementById('seasonalTitle');
-  const sub    = document.getElementById('seasonalSub');
-  if (m >= 9 && m <= 11) {
-    banner.className = 'seasonal-banner';
-    title.textContent = '🎄 Holiday Toy Gift Guide 2026';
-    sub.textContent   = 'The most wished-for toys this season — fast Prime shipping';
-  } else if (m >= 2 && m <= 4) {
-    banner.className = 'seasonal-banner spring';
-    title.textContent = '🌸 Spring Toy Picks for Every Kid';
-    sub.textContent   = 'Outdoor toys, STEM kits and more — perfect for spring';
-  } else if (m >= 5 && m <= 7) {
-    banner.className = 'seasonal-banner summer';
-    title.textContent = '☀️ Summer Toy Deals — Best Picks';
-    sub.textContent   = 'Water toys, outdoor adventure sets and more';
-  } else {
-    banner.className = 'seasonal-banner';
-    title.textContent = '🎁 Top Rated Toys This Season';
-    sub.textContent   = 'Hand-picked bestsellers with thousands of 5-star reviews';
+// SEASONAL
+function setSeasonal(){
+  const m=new Date().getMonth();
+  const el=document.getElementById('seasonal');
+  const t=document.getElementById('seasonal-title');
+  const s=document.getElementById('seasonal-sub');
+  const b=document.getElementById('seasonal-btn');
+  if(m>=9&&m<=11){
+    el.className='seasonal xmas';t.textContent='🎄 Holiday Toy Gift Guide 2026';
+    s.textContent='The most wished-for toys this season — fast Prime shipping';
+    b.className='seasonal-btn xmas';b.textContent='Shop Christmas Picks →';
+    b.href='https://www.amazon.com/s?k=christmas+toys+2026&tag=roccozoom-20';
+  }else if(m>=2&&m<=4){
+    el.className='seasonal spring';t.textContent='🌸 Spring Toy Picks for Every Kid';
+    s.textContent='Outdoor toys, STEM kits and more — perfect for spring';
+    b.className='seasonal-btn spring';b.textContent='Shop Spring Picks →';
+  }else if(m>=5&&m<=7){
+    el.className='seasonal summer';t.textContent='☀️ Summer Toy Deals — Best Picks';
+    s.textContent='Water toys, outdoor adventure sets and more';
+    b.className='seasonal-btn summer';b.textContent='Shop Summer Picks →';
   }
 }
 
-// ── RENDER PRODUCTS ──
-function renderProducts() {
-  document.getElementById('loading').style.display = 'none';
-  const grid   = document.getElementById('productGrid');
-  const badges = ['badge-new','badge-hot','badge-deal','badge-top',''];
-
-  const filtered = allProducts.filter(p => {
-    const catOk = currentCat === 'All' || p.category === currentCat;
-    const ageOk = currentAge === 'All' || p.age_group === currentAge;
-    return catOk && ageOk;
+// RENDER PRODUCTS
+function renderProducts(){
+  const grid=document.getElementById('productGrid');
+  const filtered=allProducts.filter(p=>{
+    const cOk=currentCat==='All'||p.category===currentCat;
+    const aOk=currentAge==='All'||p.age_group===currentAge||p.age===currentAge;
+    return cOk&&aOk;
   });
-
-  if (filtered.length === 0) {
-    grid.innerHTML = '<p style="color:#888;padding:20px;grid-column:1/-1;">No toys found for this filter. Try another category!</p>';
+  if(!filtered.length){
+    grid.innerHTML='<p style="color:var(--mid);padding:30px;grid-column:1/-1;text-align:center;font-size:15px;">No toys found for this filter — try another category! 🎯</p>';
     return;
   }
-
-  grid.innerHTML = filtered.map((p, i) => {
-    const badge     = badges[i % badges.length];
-    const badgeMap = {'badge-new':'New','badge-hot':'🔥 Hot','badge-deal':'Deal','badge-top':'Top Rated','':''};
-    const badgeText = badgeMap[badge] || '';
-    const score     = p.ai_score || (Math.floor(Math.random()*10)+88);
-    const stars     = '⭐'.repeat(Math.min(5, Math.round(p.rating || 4.5)));
-    return `
-    <div class="product-card" data-category="${p.category||''}" data-age="${p.age_group||''}">
-      <div class="card-img-wrap">
-        <img src="${p.image_url}" alt="${p.title}" loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=600'"/>
-        ${badge ? `<span class="card-badge ${badge}">${badgeText}</span>` : ''}
-        ${p.age_group ? `<span class="card-age">${p.age_group}</span>` : ''}
-        <div class="card-score">Score <span>${score}</span></div>
+  const badgeTypes=['badge-new','badge-hot','badge-deal','badge-top','',''];
+  const badgeMap={'badge-new':'New','badge-hot':'🔥 Hot','badge-deal':'Deal','badge-top':'Top Rated','':''};
+  grid.innerHTML=filtered.map((p,i)=>{
+    const bt=badgeTypes[i%badgeTypes.length];
+    const btxt=badgeMap[bt]||'';
+    const sc=p.ai_score||(88+i%9);
+    const rating=parseFloat(p.rating||4.5);
+    const fullStars=Math.floor(rating);
+    const stars='⭐'.repeat(Math.min(5,fullStars));
+    return `<div class="p-card" data-cat="${p.category||''}" data-age="${p.age_group||p.age||''}">
+      <div class="p-img">
+        <img src="${p.image_url}" alt="${p.title}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=600'"/>
+        ${btxt?`<span class="p-badge ${bt}">${btxt}</span>`:''}
+        ${p.age_group||p.age?`<span class="p-age">${p.age_group||p.age}</span>`:''}
+        <div class="p-score">Score <em>${sc}</em></div>
       </div>
-      <div class="card-body">
-        <div class="card-category">${p.category||'Toys'}</div>
-        <h3 class="card-title">${p.title}</h3>
-        <p class="card-review">${p.review_text||''}</p>
-        <div class="card-stars">${stars} <span style="color:#666;font-size:11px;">(${p.review_count||'4.5★'})</span></div>
-        <div class="card-footer">
-          <span class="card-price">${p.price||''}</span>
-          <a class="card-btn" href="${p.link}" target="_blank" rel="noopener sponsored">Buy Now</a>
+      <div class="p-body">
+        <div class="p-cat">${p.category||'Toys'}</div>
+        <h3 class="p-title">${p.title}</h3>
+        <p class="p-review">${p.review_text||''}</p>
+        <div class="p-stars"><span class="stars-fill">${stars}</span><span>${rating} (${p.review_count||'450+'})</span></div>
+        <div class="p-foot">
+          <span class="p-price">${p.price||''}</span>
+          <a class="p-btn" href="${p.link}" target="_blank" rel="noopener sponsored">Buy Now</a>
         </div>
       </div>
     </div>`;
   }).join('');
 }
 
-// ── FILTERS ──
-function filterCat(cat, el) {
-  currentCat = cat;
-  if (el) {
-    document.querySelectorAll('.cat-card').forEach(c => c.classList.remove('active'));
-    el.classList.add('active');
-  }
+// FILTERS
+function filterCat(cat,el){
+  currentCat=cat;
+  if(el){document.querySelectorAll('.cat-tab').forEach(c=>c.classList.remove('active'));el.classList.add('active');}
   renderProducts();
-  document.getElementById('shop').scrollIntoView({behavior:'smooth', block:'start'});
+  scrollTo('shop');
 }
-
-function filterAge(age, el) {
-  currentAge = age;
-  if (el) {
-    document.querySelectorAll('.age-pill').forEach(p => p.classList.remove('active'));
-    el.classList.add('active');
-  }
+function filterAge(age,el){
+  currentAge=age;
+  if(el){document.querySelectorAll('.age-tab').forEach(a=>a.classList.remove('active'));el.classList.add('active');}
   renderProducts();
 }
+function scrollTo(id){document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});}
 
-// ── BLOG ──
-function renderBlog(blog) {
-  if (!blog || !blog.title) return;
-  document.getElementById('loading2') && (document.getElementById('loading2').style.display = 'none');
-  const grid = document.getElementById('blogGrid');
-  grid.innerHTML = `
+// BLOG
+function renderBlog(){
+  if(!blogData.title)return;
+  const grid=document.getElementById('blogGrid');
+  grid.innerHTML=`
     <div class="blog-featured">
-      <div class="blog-card" onclick="openModal()">
-        <img src="${blog.image_url||'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800'}" alt="${blog.title}" style="height:280px;" loading="lazy"/>
-        <div class="blog-card-body">
-          <div class="blog-tag">✦ Editor's Pick</div>
-          <h3 class="blog-title">${blog.title}</h3>
-          <p class="blog-summary">${blog.summary||''}</p>
-          <div class="blog-meta">By RoccoZoom Editors · Today</div>
+      <div class="b-card" onclick="openModal()">
+        <img src="${blogData.image_url||'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800'}" alt="${blogData.title}" style="height:270px;"/>
+        <div class="b-body">
+          <div class="b-tag">✦ Editor's Pick</div>
+          <h3 class="b-title">${blogData.title}</h3>
+          <p class="b-sum">${blogData.summary||''}</p>
+          <div class="b-meta">By RoccoZoom Editors · Today · 5 min read</div>
         </div>
       </div>
     </div>
     <div style="display:flex;flex-direction:column;gap:14px;">
-      <div class="blog-card" onclick="openModal()">
-        <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?q=80&w=600" alt="Toy Guide" style="height:140px;width:100%;object-fit:cover;" loading="lazy"/>
-        <div class="blog-card-body">
-          <div class="blog-tag">Gift Guide</div>
-          <h3 class="blog-title" style="font-size:14px;">Best Toys for 5 Year Olds 2026 — Complete Guide</h3>
-          <div class="blog-meta">Buying Guide · 5 min read</div>
+      <div class="b-card" onclick="openModal()">
+        <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?q=80&w=600" alt="Guide" style="height:130px;width:100%;object-fit:cover;"/>
+        <div class="b-body">
+          <div class="b-tag">Gift Guide</div>
+          <h3 class="b-title" style="font-size:14px;">Best Toys for 5 Year Olds 2026 — Complete Guide</h3>
+          <div class="b-meta">Buying Guide · 5 min read</div>
         </div>
       </div>
-      <div class="blog-card" onclick="openModal()">
-        <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=600" alt="Action Figures" style="height:140px;width:100%;object-fit:cover;" loading="lazy"/>
-        <div class="blog-card-body">
-          <div class="blog-tag">Top Picks</div>
-          <h3 class="blog-title" style="font-size:14px;">10 Best Action Figures on Amazon Right Now</h3>
-          <div class="blog-meta">Top Picks · 4 min read</div>
+      <div class="b-card" onclick="openModal()">
+        <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?q=80&w=600" alt="Dinos" style="height:130px;width:100%;object-fit:cover;"/>
+        <div class="b-body">
+          <div class="b-tag">Top Picks</div>
+          <h3 class="b-title" style="font-size:14px;">10 Best Dinosaur Toys on Amazon Right Now</h3>
+          <div class="b-meta">Top Picks · 4 min read</div>
         </div>
       </div>
     </div>`;
 }
 
-// ── MODAL ──
-function openModal() {
-  if (!blogData.title) return;
-  document.getElementById('modalImg').src            = blogData.image_url || 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800';
-  document.getElementById('modalTitle').textContent  = blogData.title;
-  document.getElementById('modalContent').innerHTML  = blogData.content || '';
-  document.getElementById('modalOverlay').classList.add('open');
-  document.body.style.overflow = 'hidden';
+// MODAL
+function openModal(){
+  if(!blogData.title)return;
+  document.getElementById('mImg').src=blogData.image_url||'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800';
+  document.getElementById('mTitle').textContent=blogData.title;
+  document.getElementById('mContent').innerHTML=blogData.content||'';
+  document.getElementById('modalOv').classList.add('open');
+  document.body.style.overflow='hidden';
 }
-function closeModalBtn() {
-  document.getElementById('modalOverlay').classList.remove('open');
-  document.body.style.overflow = '';
-}
-function closeModal(e) {
-  if (e.target === document.getElementById('modalOverlay')) closeModalBtn();
-}
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModalBtn(); });
+function closeModalBtn(){document.getElementById('modalOv').classList.remove('open');document.body.style.overflow='';}
+function closeModal(e){if(e.target===document.getElementById('modalOv'))closeModalBtn();}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModalBtn();});
 
-// ── BLOG ARŞİVİ ──
-async function loadArchive() {
-  try {
-    const res   = await fetch('blog_archive.json?v=' + Date.now());
-    const posts = await res.json();
-    const grid  = document.getElementById('archiveGrid');
-    if (!posts || posts.length === 0) {
-      grid.innerHTML = '<p style="color:#888;font-size:14px;">Toy guides coming soon!</p>';
-      return;
-    }
-    grid.innerHTML = [...posts].reverse().map(post => `
-      <div class="archive-card" onclick="openArchivePost(${JSON.stringify(JSON.stringify(post))})">
-        <div class="archive-date">${post.date||'Latest'}</div>
-        <div class="archive-title">${post.title}</div>
-        <div class="archive-summary">${post.summary||''}</div>
-        <span class="archive-read">Read guide →</span>
+// ARCHIVE
+async function loadArchive(){
+  try{
+    const r=await fetch('blog_archive.json?v='+Date.now());
+    const posts=await r.json();
+    const grid=document.getElementById('archiveGrid');
+    if(!posts||!posts.length){grid.innerHTML='<p style="color:var(--mid)">Toy guides coming soon!</p>';return;}
+    grid.innerHTML=[...posts].reverse().map(p=>`
+      <div class="arc-card" onclick="openArchive(${JSON.stringify(JSON.stringify(p))})">
+        <div class="arc-date">${p.date||'Latest'}</div>
+        <div class="arc-title">${p.title}</div>
+        <div class="arc-sum">${p.summary||''}</div>
+        <span class="arc-link">Read guide →</span>
       </div>`).join('');
-  } catch(e) {
-    document.getElementById('archiveGrid').innerHTML = '<p style="color:#888;font-size:14px;">Toy guides coming soon!</p>';
-  }
+  }catch{document.getElementById('archiveGrid').innerHTML='<p style="color:var(--mid)">Toy guides coming soon!</p>';}
+}
+function openArchive(enc){
+  try{
+    const p=JSON.parse(enc);
+    document.getElementById('mImg').src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800';
+    document.getElementById('mTitle').textContent=p.title;
+    document.getElementById('mContent').innerHTML=`<p>${p.summary}</p><p><em>Get the full guide in our weekly newsletter. <strong>Subscribe below</strong> to never miss a toy deal!</em></p>`;
+    document.getElementById('modalOv').classList.add('open');
+    document.body.style.overflow='hidden';
+  }catch{}
 }
 
-function openArchivePost(encoded) {
-  try {
-    const post = JSON.parse(encoded);
-    document.getElementById('modalImg').src           = 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800';
-    document.getElementById('modalTitle').textContent = post.title;
-    document.getElementById('modalContent').innerHTML = `<p>${post.summary}</p><p><em>Get the full guide in our weekly newsletter. <strong>Subscribe below</strong> to never miss a toy deal!</em></p>`;
-    document.getElementById('modalOverlay').classList.add('open');
-    document.body.style.overflow = 'hidden';
-  } catch(e) {}
-}
-
-// ── NEWSLETTER ──
-function handleSubscribe(e) {
+// NEWSLETTER
+function handleSub(e){
   e.preventDefault();
-  const btn = e.target.querySelector('button');
-  btn.textContent = '✓ Subscribed!';
-  btn.style.background = '#27ae60';
-  e.target.querySelector('input').value = '';
-  setTimeout(() => { btn.textContent = 'Subscribe'; btn.style.background = ''; }, 3000);
+  const btn=e.target.querySelector('button');
+  btn.textContent='✓ Subscribed!';btn.style.background='#16a34a';
+  e.target.querySelector('input').value='';
+  setTimeout(()=>{btn.textContent='Subscribe Free';btn.style.background='';},3000);
 }
 
-// ── MOBILE MENU ──
-function toggleMenu() {
-  const n = document.getElementById('navLinks');
-  n.style.display = n.style.display === 'flex' ? 'none' : 'flex';
+// MOBILE MENU
+function toggleMenu(){
+  const n=document.querySelector('.nav-links');
+  n.style.display=n.style.display==='flex'?'none':'flex';
 }
 
-// ── INIT ──
+// INIT
 loadData();
 loadArchive();
 </script>
