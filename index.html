@@ -509,7 +509,8 @@ function renderProducts() {
 
   grid.innerHTML = filtered.map((p, i) => {
     const badge     = badges[i % badges.length];
-    const badgeText = {badge-new:'New','badge-hot':'Hot🔥','badge-deal':'Deal','badge-top':'Top Rated','':''}[badge] || '';
+    const badgeMap = {'badge-new':'New','badge-hot':'🔥 Hot','badge-deal':'Deal','badge-top':'Top Rated','':''};
+    const badgeText = badgeMap[badge] || '';
     const score     = p.ai_score || (Math.floor(Math.random()*10)+88);
     const stars     = '⭐'.repeat(Math.min(5, Math.round(p.rating || 4.5)));
     return `
