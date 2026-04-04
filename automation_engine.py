@@ -111,32 +111,107 @@ def get_unique_image(category, used_images):
     used_images.add(chosen)
     return chosen
 
-# ── FALLBACK ÜRÜN HAVUZU ──────────────────────────────────
+# ── FALLBACK ÜRÜN HAVUZU — Gerçek Amazon ürün görselleri ─
 FALLBACK = [
-    {"title":"Marvel Spider-Man Action Figure 6-inch",         "price":"$19.99","category":"Action Figures","age":"6-9",    "link":f"https://www.amazon.com/s?k=spiderman+action+figure&tag={AMAZON_TAG}"},
-    {"title":"Dinosaur Figure Set — 12 Realistic Dinos",       "price":"$24.99","category":"Dinosaurs",     "age":"3-5",    "link":f"https://www.amazon.com/s?k=dinosaur+figure+set+realistic&tag={AMAZON_TAG}"},
-    {"title":"T-Rex Roaring Electronic Dinosaur Toy",          "price":"$34.99","category":"Dinosaurs",     "age":"3-5",    "link":f"https://www.amazon.com/s?k=t-rex+electronic+dinosaur+toy&tag={AMAZON_TAG}"},
-    {"title":"Castle Adventure Playset with Knights",          "price":"$44.99","category":"Playsets",      "age":"6-9",    "link":f"https://www.amazon.com/s?k=castle+playset+kids+knights&tag={AMAZON_TAG}"},
-    {"title":"Hot Wheels 20-Car Gift Pack",                    "price":"$22.99","category":"Vehicles",      "age":"3-5",    "link":f"https://www.amazon.com/s?k=hot+wheels+car+pack&tag={AMAZON_TAG}"},
-    {"title":"LEGO City Police Station Set",                   "price":"$59.99","category":"Playsets",      "age":"6-9",    "link":f"https://www.amazon.com/s?k=lego+city+police+station&tag={AMAZON_TAG}"},
-    {"title":"National Geographic Dinosaur Dig Kit",           "price":"$18.99","category":"Educational",   "age":"6-9",    "link":f"https://www.amazon.com/s?k=dinosaur+dig+kit+kids&tag={AMAZON_TAG}"},
-    {"title":"Dragon Fire Fantasy Figure — Epic Scale",        "price":"$29.99","category":"Fantasy",       "age":"10+",    "link":f"https://www.amazon.com/s?k=dragon+fantasy+figure+kids&tag={AMAZON_TAG}"},
-    {"title":"Safari Ltd Animal Kingdom Figure Set",           "price":"$27.99","category":"Animals",       "age":"3-5",    "link":f"https://www.amazon.com/s?k=safari+animal+figure+set&tag={AMAZON_TAG}"},
-    {"title":"Transformer Optimus Prime Deluxe Figure",        "price":"$39.99","category":"Action Figures","age":"6-9",    "link":f"https://www.amazon.com/s?k=transformers+optimus+prime+figure&tag={AMAZON_TAG}"},
-    {"title":"Remote Control Monster Truck — Off Road",        "price":"$34.99","category":"Vehicles",      "age":"6-9",    "link":f"https://www.amazon.com/s?k=remote+control+monster+truck+kids&tag={AMAZON_TAG}"},
-    {"title":"Stegosaurus Large Realistic Figure",             "price":"$16.99","category":"Dinosaurs",     "age":"3-5",    "link":f"https://www.amazon.com/s?k=stegosaurus+realistic+figure&tag={AMAZON_TAG}"},
-    {"title":"Kids Science Lab Kit — STEM Experiments",        "price":"$29.99","category":"Educational",   "age":"6-9",    "link":f"https://www.amazon.com/s?k=kids+science+lab+kit+stem&tag={AMAZON_TAG}"},
-    {"title":"Unicorn Kingdom Magical Playset",                "price":"$36.99","category":"Fantasy",       "age":"3-5",    "link":f"https://www.amazon.com/s?k=unicorn+playset+kids&tag={AMAZON_TAG}"},
-    {"title":"Farm Animal Figure Collection — 20 Pieces",     "price":"$21.99","category":"Animals",       "age":"1-3",    "link":f"https://www.amazon.com/s?k=farm+animal+figures+kids&tag={AMAZON_TAG}"},
-    {"title":"Marvel Avengers 5-Figure Battle Pack",           "price":"$44.99","category":"Action Figures","age":"6-9",    "link":f"https://www.amazon.com/s?k=marvel+avengers+figure+set&tag={AMAZON_TAG}"},
-    {"title":"Velociraptor Attack Playset with Sound",         "price":"$49.99","category":"Dinosaurs",     "age":"6-9",    "link":f"https://www.amazon.com/s?k=velociraptor+playset+kids&tag={AMAZON_TAG}"},
-    {"title":"Coding Robot for Kids — Learn to Code",          "price":"$54.99","category":"Educational",   "age":"6-9",    "link":f"https://www.amazon.com/s?k=coding+robot+kids+learning&tag={AMAZON_TAG}"},
-    {"title":"RC Race Car with Turbo Mode",                    "price":"$27.99","category":"Vehicles",      "age":"6-9",    "link":f"https://www.amazon.com/s?k=rc+race+car+kids&tag={AMAZON_TAG}"},
-    {"title":"Phoenix Mythical Creature Figure Set",           "price":"$22.99","category":"Fantasy",       "age":"10+",    "link":f"https://www.amazon.com/s?k=phoenix+mythical+creature+figure&tag={AMAZON_TAG}"},
-    {"title":"Toddler Pull-Along Wooden Animal Toy",           "price":"$15.99","category":"Animals",       "age":"1-3",    "link":f"https://www.amazon.com/s?k=toddler+pull+along+wooden+toy&tag={AMAZON_TAG}"},
-    {"title":"Star Wars Mandalorian & Grogu Figure",           "price":"$24.99","category":"Action Figures","age":"10+",    "link":f"https://www.amazon.com/s?k=star+wars+mandalorian+figure&tag={AMAZON_TAG}"},
-    {"title":"Jurassic World Dino Escape Playset",             "price":"$64.99","category":"Playsets",      "age":"6-9",    "link":f"https://www.amazon.com/s?k=jurassic+world+playset&tag={AMAZON_TAG}"},
-    {"title":"Magnetic Building Blocks 100pc Set",             "price":"$39.99","category":"Educational",   "age":"3-5",    "link":f"https://www.amazon.com/s?k=magnetic+building+blocks+kids&tag={AMAZON_TAG}"},
+    # ACTION FIGURES
+    {"title":"Marvel Spider-Man Bend And Flex Action Figure",
+     "price":"$9.99","category":"Action Figures","age_group":"6-9",
+     "image_url":"https://m.media-amazon.com/images/I/71mVFrbNFkL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=spiderman+bend+flex+figure&tag={AMAZON_TAG}"},
+    {"title":"Transformers Optimus Prime Action Figure",
+     "price":"$24.99","category":"Action Figures","age_group":"6-9",
+     "image_url":"https://m.media-amazon.com/images/I/71Q5JKzVAcL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=transformers+optimus+prime+figure&tag={AMAZON_TAG}"},
+    {"title":"Marvel Avengers Titan Hero Series Figure Set",
+     "price":"$44.99","category":"Action Figures","age_group":"6-9",
+     "image_url":"https://m.media-amazon.com/images/I/81vBQAeCpBL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=marvel+avengers+titan+hero+figure&tag={AMAZON_TAG}"},
+    {"title":"Star Wars The Mandalorian Action Figure",
+     "price":"$24.99","category":"Action Figures","age_group":"10+",
+     "image_url":"https://m.media-amazon.com/images/I/71pJJVOp4QL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=star+wars+mandalorian+figure&tag={AMAZON_TAG}"},
+    # DINOSAURS
+    {"title":"Dinosaur Figures Set — 12 Realistic Dinos",
+     "price":"$24.99","category":"Dinosaurs","age_group":"3-5",
+     "image_url":"https://m.media-amazon.com/images/I/81QqKb1ZMAL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=realistic+dinosaur+figure+set+12+pack&tag={AMAZON_TAG}"},
+    {"title":"T-Rex Roaring Electronic Dinosaur Toy",
+     "price":"$34.99","category":"Dinosaurs","age_group":"3-5",
+     "image_url":"https://m.media-amazon.com/images/I/71nFiIqFLhL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=t-rex+roaring+electronic+dinosaur&tag={AMAZON_TAG}"},
+    {"title":"Stegosaurus Large Realistic Dinosaur Figure",
+     "price":"$16.99","category":"Dinosaurs","age_group":"3-5",
+     "image_url":"https://m.media-amazon.com/images/I/81a8xmXEqEL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=stegosaurus+large+figure+safari&tag={AMAZON_TAG}"},
+    {"title":"Velociraptor Dinosaur with Sound Effects",
+     "price":"$49.99","category":"Dinosaurs","age_group":"6-9",
+     "image_url":"https://m.media-amazon.com/images/I/71kJeJcfQ1L._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=velociraptor+dinosaur+sound+toy&tag={AMAZON_TAG}"},
+    # PLAYSETS
+    {"title":"LEGO City Police Station Building Set",
+     "price":"$59.99","category":"Playsets","age_group":"6-9",
+     "image_url":"https://m.media-amazon.com/images/I/91niqRZhfPL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=lego+city+police+station&tag={AMAZON_TAG}"},
+    {"title":"Jurassic World Dominion Dinosaur Playset",
+     "price":"$64.99","category":"Playsets","age_group":"6-9",
+     "image_url":"https://m.media-amazon.com/images/I/81OGrFaJ+tL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=jurassic+world+dominion+playset&tag={AMAZON_TAG}"},
+    {"title":"Peppa Pig Family Home Playset",
+     "price":"$39.99","category":"Playsets","age_group":"3-5",
+     "image_url":"https://m.media-amazon.com/images/I/71ohFJuX5NL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=peppa+pig+family+home+playset&tag={AMAZON_TAG}"},
+    # VEHICLES
+    {"title":"Hot Wheels 20-Car Gift Pack",
+     "price":"$22.99","category":"Vehicles","age_group":"3-5",
+     "image_url":"https://m.media-amazon.com/images/I/91jFhpV4eFL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=hot+wheels+20+car+gift+pack&tag={AMAZON_TAG}"},
+    {"title":"Remote Control Monster Truck Off Road",
+     "price":"$34.99","category":"Vehicles","age_group":"6-9",
+     "image_url":"https://m.media-amazon.com/images/I/71fRoHMdpLL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=remote+control+monster+truck+kids&tag={AMAZON_TAG}"},
+    {"title":"RC Race Car with Turbo Speed",
+     "price":"$27.99","category":"Vehicles","age_group":"6-9",
+     "image_url":"https://m.media-amazon.com/images/I/71Oy8LbCXpL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=rc+race+car+fast+kids&tag={AMAZON_TAG}"},
+    # EDUCATIONAL
+    {"title":"National Geographic Dinosaur Dig Kit",
+     "price":"$18.99","category":"Educational","age_group":"6-9",
+     "image_url":"https://m.media-amazon.com/images/I/91uu4RFNUFL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=national+geographic+dinosaur+dig+kit&tag={AMAZON_TAG}"},
+    {"title":"Magnetic Tiles Building Blocks 100pc",
+     "price":"$39.99","category":"Educational","age_group":"3-5",
+     "image_url":"https://m.media-amazon.com/images/I/71TKNGNf11L._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=magnetic+tiles+building+blocks+kids&tag={AMAZON_TAG}"},
+    {"title":"Coding Robot for Kids STEM Learning",
+     "price":"$54.99","category":"Educational","age_group":"6-9",
+     "image_url":"https://m.media-amazon.com/images/I/71rnkgGYc0L._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=coding+robot+kids+stem&tag={AMAZON_TAG}"},
+    # FANTASY
+    {"title":"Dragon Fire Fantasy Creature Figure",
+     "price":"$29.99","category":"Fantasy","age_group":"10+",
+     "image_url":"https://m.media-amazon.com/images/I/71aN4lC0p4L._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=dragon+fantasy+figure+large&tag={AMAZON_TAG}"},
+    {"title":"Unicorn Kingdom Magical Playset",
+     "price":"$36.99","category":"Fantasy","age_group":"3-5",
+     "image_url":"https://m.media-amazon.com/images/I/81gxE8YQKRL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=unicorn+kingdom+playset+kids&tag={AMAZON_TAG}"},
+    {"title":"Phoenix Mythical Creature Figure Set",
+     "price":"$22.99","category":"Fantasy","age_group":"10+",
+     "image_url":"https://m.media-amazon.com/images/I/71uHBJMKHzL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=mythical+creature+figure+set&tag={AMAZON_TAG}"},
+    # ANIMALS
+    {"title":"Safari Ltd Farm Animal Figure Set 20pc",
+     "price":"$27.99","category":"Animals","age_group":"3-5",
+     "image_url":"https://m.media-amazon.com/images/I/91k7yl1BXFL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=safari+farm+animal+figure+set&tag={AMAZON_TAG}"},
+    {"title":"Toddler Pull-Along Wooden Animal Toy",
+     "price":"$15.99","category":"Animals","age_group":"1-3",
+     "image_url":"https://m.media-amazon.com/images/I/71nM9dlomFL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=toddler+pull+along+wooden+animal&tag={AMAZON_TAG}"},
+    {"title":"Wild Animal Kingdom Figure Collection",
+     "price":"$21.99","category":"Animals","age_group":"3-5",
+     "image_url":"https://m.media-amazon.com/images/I/81RoGd-xZLL._AC_SX569_.jpg",
+     "link":f"https://www.amazon.com/s?k=wild+animal+kingdom+figure+collection&tag={AMAZON_TAG}"},
 ]
 
 # ── ŞABLON VERİLERİ ────────────────────────────────────────
@@ -375,7 +450,11 @@ def main():
     used_images = set()
     enriched    = []
     for p in products:
-        p["image_url"] = get_unique_image(p["category"], used_images)
+        # Eğer ürünün kendi görseli varsa (Amazon CDN) onu kullan, yoksa Unsplash'tan al
+        if not p.get("image_url"):
+            p["image_url"] = get_unique_image(p["category"], used_images)
+        else:
+            used_images.add(p["image_url"])
         result = None
         if ai_mode:
             result = groq.enrich_product(p["title"], p["price"], p["category"], p.get("age_group","3-5"))
