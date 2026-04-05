@@ -4,25 +4,31 @@
     <loc>https://roccozoom.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-05</lastmod>
   </url>
   <url>
     <loc>https://roccozoom.com/#shop</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-05</lastmod>
   </url>
   <url>
     <loc>https://roccozoom.com/#gift-guides</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-05</lastmod>
   </url>
   <url>
     <loc>https://roccozoom.com/#blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-05</lastmod>
+  </url>
+  <url>
+    <loc>https://roccozoom.com/#best-toys-for-5-year-olds-2026</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-05</lastmod>
   </url>
   <url>
     <loc>https://roccozoom.com/#best-stem-toys-kids-2026</loc>
