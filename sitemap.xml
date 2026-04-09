@@ -4,25 +4,31 @@
     <loc>https://roccozoom.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-09</lastmod>
   </url>
   <url>
     <loc>https://roccozoom.com/#shop</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-09</lastmod>
   </url>
   <url>
     <loc>https://roccozoom.com/#gift-guides</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-09</lastmod>
   </url>
   <url>
     <loc>https://roccozoom.com/#blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roccozoom.com/#christmas-toys-2026-gift-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-09</lastmod>
   </url>
   <url>
     <loc>https://roccozoom.com/#best-toys-8-year-old-boys-2026</loc>
@@ -74,12 +80,6 @@
   </url>
   <url>
     <loc>https://roccozoom.com/#best-toys-for-girls-2026-amazon</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-04</lastmod>
-  </url>
-  <url>
-    <loc>https://roccozoom.com/#best-toys-for-3-year-olds-amazon</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-04-04</lastmod>
