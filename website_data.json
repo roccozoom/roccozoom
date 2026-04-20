@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T08:02:45.676027",
+  "generated_at": "2026-04-20T09:04:58.879856",
   "amazon_tag": "roccozoom-20",
   "ai_mode": "groq",
   "config": {
@@ -9,69 +9,17 @@
   },
   "products": [
     {
-      "title": "Stegosaurus Large Realistic Dinosaur Figure",
-      "price": "$16.99",
-      "category": "Dinosaurs",
-      "age_group": "3-5",
-      "image_url": "https://images.unsplash.com/photo-1535083783855-aaab5f24c4de?q=80&w=600",
-      "link": "https://www.amazon.com/s?k=stegosaurus+large+figure+safari&tag=roccozoom-20",
-      "review_text": "Kids love realistic dinosaur details",
-      "styling_tip": "Pair with dinosaur books",
-      "ai_score": 95,
-      "rating": "4.9",
-      "review_count": "1954"
-    },
-    {
-      "title": "Marvel Spider-Man Bend And Flex Action Figure",
-      "price": "$9.99",
-      "category": "Action Figures",
+      "title": "Coding Robot for Kids STEM Learning",
+      "price": "$54.99",
+      "category": "Educational",
       "age_group": "6-9",
-      "image_url": "https://images.unsplash.com/photo-1608889175123-8ee362201f81?q=80&w=600",
-      "link": "https://www.amazon.com/s?k=spiderman+action+figure&tag=roccozoom-20",
-      "review_text": "Kids love Spider-Man's flexible moves",
-      "styling_tip": "Pair with Marvel playsets",
-      "ai_score": 88,
-      "rating": "4.5",
-      "review_count": "2275"
-    },
-    {
-      "title": "Wild Animal Kingdom Figure Collection",
-      "price": "$21.99",
-      "category": "Animals",
-      "age_group": "3-5",
-      "image_url": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?q=80&w=600",
-      "link": "https://www.amazon.com/s?k=wild+animal+kingdom+figure+collection&tag=roccozoom-20",
-      "review_text": "Vibrant animal figures delight kids.",
-      "styling_tip": "Pair with a toy habitat",
+      "image_url": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=600",
+      "link": "https://www.amazon.com/s?k=coding+robot+kids+stem&tag=roccozoom-20",
+      "review_text": "Kids love coding and learning with this fun robot",
+      "styling_tip": "Pair with blocks for enhanced play",
       "ai_score": 89,
-      "rating": "4.5",
-      "review_count": "859"
-    },
-    {
-      "title": "RC Race Car with Turbo Speed",
-      "price": "$27.99",
-      "category": "Vehicles",
-      "age_group": "6-9",
-      "image_url": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=600",
-      "link": "https://www.amazon.com/s?k=rc+race+car+fast+kids&tag=roccozoom-20",
-      "review_text": "Kids love its turbo speed",
-      "styling_tip": "Use on flat surfaces",
-      "ai_score": 93,
-      "rating": "4.4",
-      "review_count": "224"
-    },
-    {
-      "title": "Safari Ltd Farm Animal Figure Set 20pc",
-      "price": "$27.99",
-      "category": "Animals",
-      "age_group": "3-5",
-      "image_url": "https://images.unsplash.com/photo-1474511320723-9a56873867b5?q=80&w=600",
-      "link": "https://www.amazon.com/s?k=safari+farm+animal+figure+set&tag=roccozoom-20",
-      "review_text": "Vibrant farm animals delight kids",
-      "styling_tip": "Pair with play barns",
-      "ai_score": 93,
-      "rating": "4.9",
-      "review_count": "686"
+      "rating": "4.8",
+      "review_count": "1173"
     },
     {
       "title": "Unicorn Kingdom Magical Playset",
@@ -82,61 +30,9 @@
       "link": "https://www.amazon.com/s?k=unicorn+kingdom+playset+kids&tag=roccozoom-20",
       "review_text": "Kids adore the sparkly unicorns",
       "styling_tip": "Pair with fairy dolls",
-      "ai_score": 97,
-      "rating": "4.4",
-      "review_count": "1616"
-    },
-    {
-      "title": "Toddler Pull-Along Wooden Animal Toy",
-      "price": "$15.99",
-      "category": "Animals",
-      "age_group": "1-3",
-      "image_url": "https://images.unsplash.com/photo-1518791841217-8f162f1912da?q=80&w=600",
-      "link": "https://www.amazon.com/s?k=toddler+pull+along+wooden+animal&tag=roccozoom-20",
-      "review_text": "Adorable wooden animal delights kids",
-      "styling_tip": "Pair with blocks",
-      "ai_score": 87,
-      "rating": "4.9",
-      "review_count": "629"
-    },
-    {
-      "title": "Star Wars The Mandalorian Action Figure",
-      "price": "$24.99",
-      "category": "Action Figures",
-      "age_group": "10+",
-      "image_url": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?q=80&w=600",
-      "link": "https://www.amazon.com/s?k=star+wars+mandalorian+figure&tag=roccozoom-20",
-      "review_text": "Kids love Mandalorian's cool armor",
-      "styling_tip": "Pair with other Star Wars figures",
-      "ai_score": 90,
-      "rating": "4.3",
-      "review_count": "2230"
-    },
-    {
-      "title": "T-Rex Roaring Electronic Dinosaur Toy",
-      "price": "$34.99",
-      "category": "Dinosaurs",
-      "age_group": "3-5",
-      "image_url": "https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?q=80&w=600",
-      "link": "https://www.amazon.com/s?k=t-rex+roaring+electronic+dinosaur&tag=roccozoom-20",
-      "review_text": "Kids adore its roaring sound",
-      "styling_tip": "Pair with dino books",
-      "ai_score": 87,
-      "rating": "4.7",
-      "review_count": "1549"
-    },
-    {
-      "title": "Magnetic Tiles Building Blocks 100pc",
-      "price": "$39.99",
-      "category": "Educational",
-      "age_group": "3-5",
-      "image_url": "https://images.unsplash.com/photo-1560785496-3c9d27877182?q=80&w=600",
-      "link": "https://www.amazon.com/s?k=magnetic+tiles+building+blocks+kids&tag=roccozoom-20",
-      "review_text": "Kids love building with colorful tiles",
-      "styling_tip": "Store in a labeled bucket",
-      "ai_score": 89,
-      "rating": "4.3",
-      "review_count": "567"
+      "ai_score": 94,
+      "rating": "4.8",
+      "review_count": "1760"
     },
     {
       "title": "Velociraptor Dinosaur with Sound Effects",
@@ -145,11 +41,11 @@
       "age_group": "6-9",
       "image_url": "https://images.unsplash.com/photo-1606921231106-f1083329a65c?q=80&w=600",
       "link": "https://www.amazon.com/s?k=velociraptor+dinosaur+sound+toy&tag=roccozoom-20",
-      "review_text": "Kids adore the roaring sound effects",
+      "review_text": "Kids love roaring sounds",
       "styling_tip": "Pair with dinosaur books",
-      "ai_score": 92,
+      "ai_score": 91,
       "rating": "4.6",
-      "review_count": "1223"
+      "review_count": "835"
     },
     {
       "title": "Dinosaur Eggs Surprise Excavation Kit",
@@ -159,23 +55,10 @@
       "image_url": "https://images.unsplash.com/photo-1562155618-e1a8c9b399c3?q=80&w=600",
       "link": "https://www.amazon.com/s?k=dinosaur+egg+excavation+kit&tag=roccozoom-20",
       "review_text": "Kids love excavating dinosaurs",
-      "styling_tip": "Pair with sand play",
-      "ai_score": 91,
-      "rating": "4.9",
-      "review_count": "466"
-    },
-    {
-      "title": "Dinosaur Figures Set — 12 Realistic Dinos",
-      "price": "$24.99",
-      "category": "Dinosaurs",
-      "age_group": "3-5",
-      "image_url": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?q=80&w=600",
-      "link": "https://www.amazon.com/s?k=realistic+dinosaur+figure+set+12+pack&tag=roccozoom-20",
-      "review_text": "Kids adore realistic dinosaur figures",
-      "styling_tip": "Pair with sandbox",
-      "ai_score": 88,
-      "rating": "4.5",
-      "review_count": "965"
+      "styling_tip": "Pair with sandplay tools",
+      "ai_score": 95,
+      "rating": "4.8",
+      "review_count": "592"
     },
     {
       "title": "Peppa Pig Family Home Playset",
@@ -186,9 +69,35 @@
       "link": "https://www.amazon.com/s?k=peppa+pig+family+home+playset&tag=roccozoom-20",
       "review_text": "Kids adore Peppa's home",
       "styling_tip": "Pair with Peppa figures",
-      "ai_score": 91,
-      "rating": "4.7",
-      "review_count": "1521"
+      "ai_score": 94,
+      "rating": "4.4",
+      "review_count": "1592"
+    },
+    {
+      "title": "LEGO City Police Station Building Set",
+      "price": "$59.99",
+      "category": "Playsets",
+      "age_group": "6-9",
+      "image_url": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=600",
+      "link": "https://www.amazon.com/s?k=lego+city+police+station&tag=roccozoom-20",
+      "review_text": "Kids love the interactive police station",
+      "styling_tip": "Pair with mini figures",
+      "ai_score": 97,
+      "rating": "4.6",
+      "review_count": "1110"
+    },
+    {
+      "title": "Marvel Spider-Man Bend And Flex Action Figure",
+      "price": "$9.99",
+      "category": "Action Figures",
+      "age_group": "6-9",
+      "image_url": "https://images.unsplash.com/photo-1608889175123-8ee362201f81?q=80&w=600",
+      "link": "https://www.amazon.com/s?k=spiderman+action+figure&tag=roccozoom-20",
+      "review_text": "Kids love its flexible web-slinging fun",
+      "styling_tip": "Pair with Marvel playsets",
+      "ai_score": 94,
+      "rating": "4.8",
+      "review_count": "2058"
     },
     {
       "title": "Castle Adventure Playset with Knights",
@@ -197,11 +106,102 @@
       "age_group": "6-9",
       "image_url": "https://images.unsplash.com/photo-1575783970733-1aaedde1db74?q=80&w=600",
       "link": "https://www.amazon.com/s?k=castle+playset+kids+knights&tag=roccozoom-20",
-      "review_text": "Kids adore this medieval playset",
+      "review_text": "Kids love this playset's adventurous knights",
       "styling_tip": "Pair with action figures",
+      "ai_score": 95,
+      "rating": "4.8",
+      "review_count": "532"
+    },
+    {
+      "title": "T-Rex Roaring Electronic Dinosaur Toy",
+      "price": "$34.99",
+      "category": "Dinosaurs",
+      "age_group": "3-5",
+      "image_url": "https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?q=80&w=600",
+      "link": "https://www.amazon.com/s?k=t-rex+roaring+electronic+dinosaur&tag=roccozoom-20",
+      "review_text": "Kids love the roaring T-Rex toy",
+      "styling_tip": "Pair with dino books",
+      "ai_score": 87,
+      "rating": "4.9",
+      "review_count": "440"
+    },
+    {
+      "title": "RC Race Car with Turbo Speed",
+      "price": "$27.99",
+      "category": "Vehicles",
+      "age_group": "6-9",
+      "image_url": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=600",
+      "link": "https://www.amazon.com/s?k=rc+race+car+fast+kids&tag=roccozoom-20",
+      "review_text": "Kids love its turbo speed",
+      "styling_tip": "Use on flat surfaces",
+      "ai_score": 96,
+      "rating": "4.4",
+      "review_count": "195"
+    },
+    {
+      "title": "Dinosaur Figures Set — 12 Realistic Dinos",
+      "price": "$24.99",
+      "category": "Dinosaurs",
+      "age_group": "3-5",
+      "image_url": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?q=80&w=600",
+      "link": "https://www.amazon.com/s?k=realistic+dinosaur+figure+set+12+pack&tag=roccozoom-20",
+      "review_text": "Kids love realistic dinos",
+      "styling_tip": "Pair with blocks",
+      "ai_score": 91,
+      "rating": "4.9",
+      "review_count": "1578"
+    },
+    {
+      "title": "Phoenix Mythical Creature Figure Set",
+      "price": "$22.99",
+      "category": "Fantasy",
+      "age_group": "10+",
+      "image_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=600",
+      "link": "https://www.amazon.com/s?k=mythical+creature+figure+set&tag=roccozoom-20",
+      "review_text": "Vibrant details delight kids",
+      "styling_tip": "Pair with fantasy books",
+      "ai_score": 97,
+      "rating": "4.6",
+      "review_count": "1056"
+    },
+    {
+      "title": "Safari Ltd Farm Animal Figure Set 20pc",
+      "price": "$27.99",
+      "category": "Animals",
+      "age_group": "3-5",
+      "image_url": "https://images.unsplash.com/photo-1474511320723-9a56873867b5?q=80&w=600",
+      "link": "https://www.amazon.com/s?k=safari+farm+animal+figure+set&tag=roccozoom-20",
+      "review_text": "Vibrant animal figures delight kids",
+      "styling_tip": "Pair with blocks for farm",
       "ai_score": 94,
-      "rating": "4.3",
-      "review_count": "1888"
+      "rating": "4.8",
+      "review_count": "1474"
+    },
+    {
+      "title": "Magnetic Tiles Building Blocks 100pc",
+      "price": "$39.99",
+      "category": "Educational",
+      "age_group": "3-5",
+      "image_url": "https://images.unsplash.com/photo-1560785496-3c9d27877182?q=80&w=600",
+      "link": "https://www.amazon.com/s?k=magnetic+tiles+building+blocks+kids&tag=roccozoom-20",
+      "review_text": "Kids love building with colorful tiles",
+      "styling_tip": "Great for travel play",
+      "ai_score": 94,
+      "rating": "4.7",
+      "review_count": "1010"
+    },
+    {
+      "title": "Toddler Pull-Along Wooden Animal Toy",
+      "price": "$15.99",
+      "category": "Animals",
+      "age_group": "1-3",
+      "image_url": "https://images.unsplash.com/photo-1518791841217-8f162f1912da?q=80&w=600",
+      "link": "https://www.amazon.com/s?k=toddler+pull+along+wooden+animal&tag=roccozoom-20",
+      "review_text": "Cute, safe, and fun toy",
+      "styling_tip": "Pair with blocks",
+      "ai_score": 98,
+      "rating": "4.9",
+      "review_count": "462"
     },
     {
       "title": "Batman Dark Knight Poseable Action Figure",
@@ -210,57 +210,57 @@
       "age_group": "6-9",
       "image_url": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=600",
       "link": "https://www.amazon.com/s?k=batman+action+figure+kids&tag=roccozoom-20",
-      "review_text": "Kids love Batman's poseable adventures",
-      "styling_tip": "Pair with DC playsets",
-      "ai_score": 95,
-      "rating": "4.4",
-      "review_count": "1978"
-    },
-    {
-      "title": "Remote Control Monster Truck Off Road",
-      "price": "$34.99",
-      "category": "Vehicles",
-      "age_group": "6-9",
-      "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?q=80&w=600",
-      "link": "https://www.amazon.com/s?k=remote+control+monster+truck+kids&tag=roccozoom-20",
-      "review_text": "Kids love its speed and durability",
-      "styling_tip": "Pair with ramps for extra fun",
-      "ai_score": 89,
-      "rating": "4.6",
-      "review_count": "1741"
-    },
-    {
-      "title": "Coding Robot for Kids STEM Learning",
-      "price": "$54.99",
-      "category": "Educational",
-      "age_group": "6-9",
-      "image_url": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=600",
-      "link": "https://www.amazon.com/s?k=coding+robot+kids+stem&tag=roccozoom-20",
-      "review_text": "Kids love coding fun",
-      "styling_tip": "Pair with blocks",
+      "review_text": "Kids love Batman's poseability",
+      "styling_tip": "Pair with Gotham playset",
       "ai_score": 98,
       "rating": "4.8",
-      "review_count": "2372"
+      "review_count": "321"
+    },
+    {
+      "title": "Dragon Fire Fantasy Creature Figure",
+      "price": "$29.99",
+      "category": "Fantasy",
+      "age_group": "10+",
+      "image_url": "https://images.unsplash.com/photo-1604514628550-37477afdf4e3?q=80&w=600",
+      "link": "https://www.amazon.com/s?k=dragon+fantasy+figure+large&tag=roccozoom-20",
+      "review_text": "Vibrant details delight kids",
+      "styling_tip": "Pair with fantasy books",
+      "ai_score": 93,
+      "rating": "4.5",
+      "review_count": "2053"
+    },
+    {
+      "title": "Stegosaurus Large Realistic Dinosaur Figure",
+      "price": "$16.99",
+      "category": "Dinosaurs",
+      "age_group": "3-5",
+      "image_url": "https://images.unsplash.com/photo-1535083783855-aaab5f24c4de?q=80&w=600",
+      "link": "https://www.amazon.com/s?k=stegosaurus+large+figure+safari&tag=roccozoom-20",
+      "review_text": "Kids love realistic dinosaur details",
+      "styling_tip": "Pair with dino books",
+      "ai_score": 95,
+      "rating": "4.4",
+      "review_count": "1188"
     }
   ],
   "blog": {
-    "title": "Best Toys for 8 Year Old Boys 2026",
-    "meta_description": "Best toys for 8 year old boys 2026",
-    "summary": "Top toys for 8 year olds",
-    "content": "<h2>Best Toys for 8 Year Old Boys 2026: A Comprehensive Guide for Parents</h2>\n<p>As a parent, finding the right toys for your 8-year-old boy can be a daunting task. With so many options available in the market, it's essential to choose toys that are not only fun but also educational and safe. In this article, we will explore the <strong>best toys 8 year old boys 2026</strong> and provide you with a list of recommendations that are sure to delight your child.</p>\n<p>At 8 years old, boys are naturally curious and love to explore their surroundings. They are also developing their social and cognitive skills, and toys can play a significant role in this process. The <strong>best toys 8 year old boys 2026</strong> should encourage creativity, imagination, and problem-solving skills, while also promoting physical activity and social interaction.</p>\n<h2>Types of Toys Suitable for 8 Year Old Boys</h2>\n<p>There are several types of toys that are suitable for 8 year old boys, including:</p>\n<ul>\n<li>Building and construction toys, such as LEGO and K'NEX, that promote creativity and problem-solving skills</li>\n<li>Outdoor toys, such as bikes and scooters, that encourage physical activity and exploration</li>\n<li>Board games and puzzles, such as Monopoly and Rubik's Cube, that develop social and cognitive skills</li>\n<li>Electronic toys, such as tablets and gaming consoles, that provide entertainment and educational value</li>\n</ul>\n<p>When choosing toys for your 8 year old boy, it's essential to consider his interests and abilities. If he loves building and creating things, a LEGO set or a K'NEX roller coaster would be an excellent choice. If he's more into outdoor activities, a new bike or a scooter would be a great option.</p>\n<h2>Amazon Product Recommendations</h2>\n<p>Here are three Amazon product recommendations that are sure to delight your 8 year old boy:</p>\n<ul>\n<li><strong>LEGO Star Wars Death Star</strong> - This LEGO set is a must-have for any Star Wars fan. With over 4,000 pieces, it's a challenging and exciting build that will keep your child engaged for hours. (<a href=\"https://www.amazon.com/LEGO-Star-Wars-Death-Star/dp/B07B9R7RYG\">Check price on Amazon</a>)</li>\n<li><strong>Razor Power Core E90 Electric Scooter</strong> - This electric scooter is perfect for kids who love to ride and explore their surroundings. With a powerful motor and a long-lasting battery, it's a great way to promote physical activity and outdoor fun. (<a href=\"https://www.amazon.com/Razor-Power-Core-E90-Electric-Scooter/dp/B07B9R7RYG\">Check price on Amazon</a>)</li>\n<li><strong>ThinkFun Gravity Maze</strong> - This gravity maze is a challenging and educational puzzle that develops problem-solving skills and hand-eye coordination. With over 60 challenges, it's a great way to keep your child engaged and entertained for hours. (<a href=\"https://www.amazon.com/ThinkFun-Gravity-Maze/dp/B0792R2WKG\">Check price on Amazon</a>)</li>\n</ul>\n<p>In conclusion, the <strong>best toys 8 year old boys 2026</strong> are those that promote creativity, imagination, and problem-solving skills, while also encouraging physical activity and social interaction. By considering your child's interests and abilities, you can choose toys that are both fun and educational. Remember to always check the recommended age range and safety features before making a purchase, and happy shopping!</p>",
+    "title": "Best Fantasy Creature Toys 2026 — Dragons and More",
+    "meta_description": "Discover best fantasy creature toys 2026",
+    "summary": "Top fantasy toys revealed",
+    "content": "<h2>Best Fantasy Creature Toys 2026 — Dragons and More</h2>\n<p>Are you looking for the perfect toys to spark your child's imagination and creativity? Look no further than the best fantasy creature toys 2026 has to offer. From dragons to unicorns, these toys are sure to delight kids of all ages. In this article, we'll explore some of the most popular and exciting fantasy creature toys available, including dragons, unicorns, and more.</p>\n<p>Fantasy creature toys are not only fun, but they also encourage creative play, problem-solving, and imagination. They can help children develop their critical thinking skills, hand-eye coordination, and social skills, all while having a blast. Whether your child is a fan of mythical creatures, magic, or adventure, there's a fantasy creature toy out there that's sure to capture their attention.</p>\n<h2>Types of Fantasy Creature Toys</h2>\n<p>There are many different types of fantasy creature toys available, each with its own unique characteristics and features. Some popular types of fantasy creature toys include:</p>\n<ul>\n<li><strong>Dragons</strong>: From small, cuddly plush toys to large, elaborate figurines, dragons are a popular choice among kids and collectors alike.</li>\n<li><strong>Unicorns</strong>: With their shimmering coats and majestic horns, unicorns are a beloved fantasy creature that can add a touch of magic to any playroom.</li>\n<li><strong>Mermaids</strong>: For kids who love the ocean and all its creatures, mermaid toys are a great choice, offering a range of play options, from swimming to treasure hunting.</li>\n</ul>\n<p>When it comes to choosing the best fantasy creature toys 2026, there are many factors to consider, including your child's age, interests, and skill level. You'll also want to think about the quality and durability of the toy, as well as any safety features or warnings.</p>\n<h2>Top Picks for Best Fantasy Creature Toys 2026</h2>\n<p>Here are three of our top picks for the best fantasy creature toys 2026:</p>\n<ul>\n<li><a href=\"https://www.amazon.com/Funko-Pop-Dragon-Collectible-Figure/dp/B0792R3R1G\">Funko Pop Dragon Collectible Figure</a>: This adorable dragon figurine is perfect for kids and collectors alike, featuring a colorful, stylized design and a compact size that's easy to display.</li>\n<li><a href=\"https://www.amazon.com/Schleich-Unicorn-Figurine-13817/dp/B0002AQZZK\">Schleich Unicorn Figurine</a>: With its intricate details and shimmering coat, this unicorn figurine is a must-have for any fantasy creature fan, offering a range of play options and encouraging imaginative play.</li>\n<li><a href=\"https://www.amazon.com/Playmobil-Dreamhouse-Mermaid-Playset-6936/dp/B07B9R7RYG\">Playmobil Dreamhouse Mermaid Playset</a>: This elaborate playset features a beautiful mermaid-themed design, complete with a shimmering tail, treasure chest, and other accessories, offering hours of imaginative play and adventure.</li>\n</ul>\n<p>These are just a few examples of the many amazing fantasy creature toys available in 2026. Whether your child is a fan of dragons, unicorns, or mermaids, there's a toy out there that's sure to capture their imagination and inspire their creativity.</p>\n<p>In conclusion, the best fantasy creature toys 2026 offer a range of exciting options for kids of all ages, from cuddly plush toys to elaborate playsets and figurines. By considering your child's interests and needs, you can choose the perfect fantasy creature toy to spark their imagination and creativity, and provide hours of fun and entertainment.</p>",
     "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800",
-    "slug": "best-toys-8-year-old-boys-2026"
+    "slug": "best-fantasy-creature-toys-2026"
   },
   "stats": {
     "total_products": 18,
     "categories": [
-      "Playsets",
-      "Fantasy",
       "Animals",
+      "Playsets",
+      "Action Figures",
+      "Vehicles",
       "Educational",
       "Dinosaurs",
-      "Action Figures",
-      "Vehicles"
+      "Fantasy"
     ]
   }
 }
