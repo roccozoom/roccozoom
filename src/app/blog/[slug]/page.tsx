@@ -3,6 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PrismaClient } from "@prisma/client";
 import { Metadata } from "next";
+import Script from "next/script";
+
+export const revalidate = 3600;
 
 const prisma = new PrismaClient({
   datasourceUrl: process.env.DATABASE_URL || "file:./dev.db"
@@ -11,15 +14,20 @@ const prisma = new PrismaClient({
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const blog = await prisma.blogPost.findUnique({ where: { slug } });
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://roccozoom.com";
   if (!blog) return { title: "Play Guide Not Found | RoccoZoom" };
   
   return {
     title: `${blog.title} | RoccoZoom Play Guides`,
     description: blog.metaDescription || blog.summary,
+    alternates: {
+      canonical: `${siteUrl}/blog/${blog.slug}`
+    },
     openGraph: {
       title: blog.title,
       description: blog.metaDescription || blog.summary,
-      images: [blog.imageUrl],
+      url: `${siteUrl}/blog/${blog.slug}`,
+      images: blog.imageUrl ? [blog.imageUrl] : [],
     }
   };
 }
@@ -32,11 +40,42 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   if (!blog) notFound();
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://roccozoom.com";
+
   return (
     <div className="bg-white">
+      <Script
+        id={`blog-schema-${blog.slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": blog.title,
+            "image": blog.imageUrl ? [blog.imageUrl] : [],
+            "datePublished": blog.createdAt.toISOString(),
+            "dateModified": blog.updatedAt.toISOString(),
+            "description": blog.metaDescription || blog.summary,
+            "author": {
+              "@type": "Organization",
+              "name": "RoccoZoom",
+              "url": siteUrl
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "RoccoZoom",
+              "url": siteUrl
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `${siteUrl}/blog/${blog.slug}`
+            }
+          })
+        }}
+      />
       {/* Hero */}
       <div className="relative h-[50vh] min-h-[400px] w-full bg-zinc-950 flex items-center justify-center">
-        <Image src={blog.imageUrl} alt={blog.title} fill className="object-cover opacity-50" priority />
+        <Image src={blog.imageUrl} alt={blog.title} fill className="object-cover opacity-50" priority unoptimized={blog.imageUrl?.includes('unsplash') || blog.imageUrl?.includes('pollinations') || blog.imageUrl?.includes('loremflickr')} />
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <span className="inline-block py-1.5 px-4 rounded-full bg-blue-500/20 text-blue-300 text-[10px] font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
             Parenting Guide

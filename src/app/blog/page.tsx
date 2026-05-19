@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { PrismaClient } from "@prisma/client";
 
+export const revalidate = 3600;
+
 const prisma = new PrismaClient({
   datasourceUrl: process.env.DATABASE_URL || "file:./dev.db"
 });
@@ -22,7 +24,7 @@ export default async function BlogPage() {
         {blogs.map((b, idx) => (
           <Link href={`/blog/${b.slug}`} key={b.id} className="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-zinc-100">
             <div className="relative aspect-[4/3] overflow-hidden bg-zinc-100">
-              <Image src={b.imageUrl} alt={b.title} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+              <Image src={b.imageUrl} alt={b.title} fill className="object-cover transition-transform duration-700 group-hover:scale-110" unoptimized />
             </div>
             <div className="p-8 flex flex-col flex-1">
               <span className="text-[10px] font-bold tracking-[0.1em] uppercase text-blue-500 mb-3">Parenting Guide</span>

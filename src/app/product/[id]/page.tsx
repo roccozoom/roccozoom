@@ -2,8 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PrismaClient } from "@prisma/client";
-
 import { Metadata } from "next";
+import Script from "next/script";
+
+export const revalidate = 3600;
 
 const prisma = new PrismaClient({
   datasourceUrl: process.env.DATABASE_URL || "file:./dev.db"
@@ -12,14 +14,19 @@ const prisma = new PrismaClient({
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;
   const product = await prisma.product.findUnique({ where: { id } });
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://roccozoom.com";
   if (!product) return { title: "Product Not Found | RoccoZoom" };
   
   return {
     title: `${product.title} | RoccoZoom Picks`,
     description: product.reviewText || "Curated educational deals on Amazon.",
+    alternates: {
+      canonical: `${siteUrl}/product/${product.id}`
+    },
     openGraph: {
       title: product.title,
       description: product.reviewText || "",
+      url: `${siteUrl}/product/${product.id}`,
       images: [product.imageUrl],
     }
   };
@@ -34,8 +41,41 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
 
   if (!product) notFound();
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://roccozoom.com";
+  const cleanPrice = parseFloat(product.price.replace(/[^0-9.]/g, '')) || 0.00;
+  const cleanRating = parseFloat(product.rating) || 4.5;
+  const cleanReviewCount = parseInt(product.reviewCount.replace(/[^0-9]/g, ''), 10) || 100;
+
   return (
     <div className="max-w-6xl mx-auto px-6 md:px-12 py-16">
+      <Script
+        id={`product-schema-${product.id}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": product.title,
+            "image": [product.imageUrl],
+            "description": product.reviewText || "Curated educational toy.",
+            "sku": product.id,
+            "offers": {
+              "@type": "Offer",
+              "url": `${siteUrl}/product/${product.id}`,
+              "priceCurrency": "USD",
+              "price": cleanPrice,
+              "itemCondition": "https://schema.org/NewCondition",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": new Date(Date.now() + 1000 * 60 * 60 * 24 * 90).toISOString().split('T')[0]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": cleanRating,
+              "reviewCount": cleanReviewCount
+            }
+          })
+        }}
+      />
       <div className="mb-8">
         <Link href="/shop" className="text-xs font-bold tracking-widest uppercase text-zinc-500 hover:text-blue-500 transition-colors">
           ← Back to Shop
@@ -45,7 +85,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
       <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
         {/* Left: Image */}
         <div className="relative aspect-[3/4] md:aspect-auto md:h-[600px] rounded-3xl overflow-hidden bg-zinc-100 shadow-2xl">
-          <Image src={product.imageUrl} alt={product.title} fill className="object-cover" priority />
+          <Image src={product.imageUrl} alt={product.title} fill className="object-cover" priority unoptimized />
         </div>
 
         {/* Right: Details */}

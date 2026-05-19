@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { PrismaClient } from "@prisma/client";
 
+export const revalidate = 3600;
+
 const prisma = new PrismaClient({
   datasourceUrl: process.env.DATABASE_URL || "file:./dev.db"
 });
@@ -40,11 +42,12 @@ export default async function Home() {
           </div>
           <div className="relative aspect-square md:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
             <Image 
-              src="https://images.unsplash.com/photo-1596461404969-9ae021eca1f0?q=80&w=900&auto=format&fit=crop" 
+              src="https://image.pollinations.ai/prompt/colorful%20educational%20toys%20for%20kids%20wooden%20blocks%20puzzles%20bright%20studio%20photo?width=900&height=1100&nologo=true" 
               alt="Toys" 
               fill 
               className="object-cover"
               priority
+              unoptimized
             />
             <div className="absolute bottom-6 left-6 right-6 md:right-auto bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-xl">
               <strong className="block font-playfair text-lg font-bold text-zinc-900 mb-1">Today's Editor's Pick</strong>

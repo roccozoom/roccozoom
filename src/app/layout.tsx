@@ -9,8 +9,37 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 const lato = Lato({ subsets: ["latin"], weight: ["300", "400", "700"], variable: "--font-lato" });
 
 export const metadata: Metadata = {
-  title: "RoccoZoom | Curated Toys & Educational Finds",
+  metadataBase: new URL("https://roccozoom.com"),
+  title: {
+    default: "RoccoZoom | Curated Toys & Educational Finds",
+    template: "%s | RoccoZoom",
+  },
   description: "Discover affordable, top-rated toys, dinosaur playsets, and STEM activities curated daily for kids of all ages.",
+  keywords: ["educational toys", "dinosaur playsets", "STEM toys", "kids activities", "affordable toys", "toddler toys"],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://roccozoom.com",
+    siteName: "RoccoZoom",
+    title: "RoccoZoom | Curated Toys & Educational Finds",
+    description: "Discover affordable, top-rated toys, dinosaur playsets, and STEM activities curated daily for kids of all ages.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RoccoZoom | Curated Toys & Educational Finds",
+    description: "Discover affordable, top-rated toys, dinosaur playsets, and STEM activities curated daily for kids of all ages.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -27,6 +56,25 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4267818870826080"
           crossOrigin="anonymous"
           strategy="afterInteractive"
+        />
+        {/* Schema.org WebSite Structured Data */}
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "RoccoZoom",
+              "url": "https://roccozoom.com/",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://roccozoom.com/shop?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
         />
       </head>
       <body className={`${playfair.variable} ${lato.variable} font-sans antialiased bg-[#FAFAFA] text-zinc-900`}>
